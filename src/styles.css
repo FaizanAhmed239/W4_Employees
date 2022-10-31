@@ -1,0 +1,36 @@
+html,body{
+    background-color: #2D2B2C !important;
+    padding: 20px !important;
+    height: 100% !important;
+  }
+  .App{
+    background-color: #DCDCDC;
+    height: 90vh;
+  }
+  .sidebarLink{
+    text-decoration: none;
+    border-bottom: 2px solid #707070;
+    font: bold 13px segoe UI;
+    color: white;
+  }
+  .sidebarLink:hover{
+    background-color: #707070;
+    color: white;
+  }
+  .violationTable th{
+    border: 1px solid #707070;
+    
+  }
+  .violationTable td{
+    border: 1px solid #707070;
+  }
+  .violationTable {
+    max-height: 300px;
+    text-align: center;
+    border-collapse: collapse;
+    width: 850px;
+    background-color: #F7F7F7;
+    display: block;
+    overflow-y: scroll;
+    white-space: nowrap;
+  }

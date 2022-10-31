@@ -1,24 +1,50 @@
-import logo from './logo.svg';
-import './App.css';
+import './styles.css';
+import Navbar from './Components/Navbar';
+import SideBar from './Components/SideBar';
+import Home from './Components/Home';
+import Attendance from './Components/Attendance';
+import Registration from './Components/Registration';
+import Violations from './Components/Violations';
+import GroupManagement from './Components/GroupManagement';
+import SystemControl from './Components/SystemControl';
+import RoleManagement from './Components/RoleManagement';
+import ViolationDetails from './Components/ViolationDetails';
+import {
+      BrowserRouter as Router,
+      Routes,
+      Route,
+  } from 'react-router-dom';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <Router>
+            <div className="App container-fluid">
+                  <div className='row'>
+                        <div className='col-12 p-0'>
+                              <Navbar/>
+                        </div>
+                  </div>
+                  <div className='row p-0'>
+                        <div className='col-2 p-0'>
+                              <SideBar/>
+                        </div>
+                        <div className='col-10 p-0'>
+                        <Routes>
+                              <Route path="/" element={<Home/>} />
+                              <Route path="/registration" element={<Registration/>} />
+                              <Route path="/attendance" element={<Attendance/>} />
+                              <Route path="/violations" element={<Violations/>} />
+                              <Route path="/role management" element={<RoleManagement/>} />
+                              <Route path="/group Management" element={<GroupManagement/>} />
+                              <Route path="/system Control" element={<SystemControl/>} />
+                              <Route path="/violationdetails" element={<ViolationDetails/>} />
+                              
+                        </Routes>
+                        </div>
+                  </div>
+            </div>
+      </Router>
+    
   );
 }
 
