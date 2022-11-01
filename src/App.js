@@ -9,6 +9,7 @@ import GroupManagement from './Components/GroupManagement';
 import SystemControl from './Components/SystemControl';
 import RoleManagement from './Components/RoleManagement';
 import ViolationDetails from './Components/ViolationDetails';
+import PolicyEditor from './Components/PolicyEditor';
 import {
       BrowserRouter as Router,
       Routes,
@@ -38,6 +39,7 @@ function App() {
                               <Route path="/group Management" element={<GroupManagement/>} />
                               <Route path="/system Control" element={<SystemControl/>} />
                               <Route path="/violationdetails" element={<ViolationDetails/>} />
+                              <Route path="/policyeditor" element={<PolicyEditor/>} />
                               
                         </Routes>
                         </div>

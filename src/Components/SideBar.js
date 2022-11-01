@@ -27,7 +27,7 @@ export default function SideBar() {
                     <Link to="/system Control" className='col-12 p-1 sidebarLink'>System Control</Link>   
                 </li>
                 <li className='row'>
-                    <Link to="/rules policy editor" className='col-12 p-1 sidebarLink'>Rules & Policy Editor</Link>   
+                    <Link to="/policyeditor" className='col-12 p-1 sidebarLink'>Rules & Policy Editor</Link>   
                 </li>
                 <li className='row'>
                     <Link to="/live Stream" className='col-12 p-1 sidebarLink'>Live Stream</Link>  
