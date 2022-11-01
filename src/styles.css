@@ -19,18 +19,40 @@ html,body{
   }
   .violationTable th{
     border: 1px solid #707070;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
     
   }
   .violationTable td{
     border: 1px solid #707070;
   }
   .violationTable {
-    max-height: 300px;
+    max-height: 350px;
     text-align: center;
     border-collapse: collapse;
-    width: 850px;
+    width: 940px;
     background-color: #F7F7F7;
     display: block;
     overflow-y: scroll;
     white-space: nowrap;
+    font-size: 13px;
+  }
+
+  .search{
+    background-color: white;
+    width: 97%;
+    border-radius: 7px;
+  }
+
+  .search p{
+      margin: 0%;
+      color: #747172;
+      opacity: 52%;
+  }
+
+  .search img{
+      height: 20px;
+      width: 20px;
   }

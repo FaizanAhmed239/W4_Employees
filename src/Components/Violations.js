@@ -11,8 +11,20 @@ export default function Violations() {
 
   const [data,setData] = useState([{'id':123, 'name':"Uncle Majboor", 'cnic': '35202-2222222-2', 'role':"User", 'zone':'A', 'critviolnum':10, 'lowviolnum':4},{'id':123, 'name':"Uncle Majboor", 'cnic': '35202-2222222-2', 'role':"User", 'zone':'A', 'critviolnum':10, 'lowviolnum':4},
   {'id':123, 'name':"Uncle Majboor", 'cnic': '35202-2222222-2', 'role':"User", 'zone':'A', 'critviolnum':10, 'lowviolnum':4},
+  {'id':123, 'name':"Uncle Majboor", 'cnic': '35202-2222222-2', 'role':"User", 'zone':'A', 'critviolnum':10, 'lowviolnum':4},
+  {'id':123, 'name':"Uncle Majboor", 'cnic': '35202-2222222-2', 'role':"User", 'zone':'A', 'critviolnum':10, 'lowviolnum':4},
+  {'id':123, 'name':"Uncle Majboor", 'cnic': '35202-2222222-2', 'role':"User", 'zone':'A', 'critviolnum':10, 'lowviolnum':4},
+  {'id':123, 'name':"Uncle Majboor", 'cnic': '35202-2222222-2', 'role':"User", 'zone':'A', 'critviolnum':10, 'lowviolnum':4},
+  {'id':123, 'name':"Uncle Majboor", 'cnic': '35202-2222222-2', 'role':"User", 'zone':'A', 'critviolnum':10, 'lowviolnum':4},
+  {'id':123, 'name':"Uncle Majboor", 'cnic': '35202-2222222-2', 'role':"User", 'zone':'A', 'critviolnum':10, 'lowviolnum':4},
+  {'id':123, 'name':"Uncle Majboor", 'cnic': '35202-2222222-2', 'role':"User", 'zone':'A', 'critviolnum':10, 'lowviolnum':4},
+  {'id':123, 'name':"Uncle Majboor", 'cnic': '35202-2222222-2', 'role':"User", 'zone':'A', 'critviolnum':10, 'lowviolnum':4},
+  {'id':123, 'name':"Uncle Majboor", 'cnic': '35202-2222222-2', 'role':"User", 'zone':'A', 'critviolnum':10, 'lowviolnum':4},
+  {'id':123, 'name':"Uncle Majboor", 'cnic': '35202-2222222-2', 'role':"User", 'zone':'A', 'critviolnum':10, 'lowviolnum':4},
+  {'id':123, 'name':"Uncle Majboor", 'cnic': '35202-2222222-2', 'role':"User", 'zone':'A', 'critviolnum':10, 'lowviolnum':4},
+
   {'id':123, 'name':"Uncle Majboor", 'cnic': '35202-2222222-2', 'role':"User", 'zone':'A', 'critviolnum':10, 'lowviolnum':4}
-  
+
   ]);
   
    
@@ -31,7 +43,7 @@ export default function Violations() {
                     <td>{employee.zone}</td>
                     <td>{employee.critviolnum}</td>
                     <td>{employee.lowviolnum}</td>
-                    <td><Link to='/violationdetails'><img src='/icon.svg'></img></Link></td>
+                    <td><Link to='/violationdetails'><img src='/icon.svg' height='27px'></img></Link></td>
            </tr>
           )})}            
     </>
@@ -42,22 +54,34 @@ export default function Violations() {
   return (
     <div className='p-2' style={{background: '#DCDCDC', borderColor: '#707070',height:'82vh'}}>
         <div className='container' style={{background: '#A19B9E', border: '1px solid #707070', borderRadius:'5px', height:'80vh'}}>
-            <div className='row'>
-              <h3>Violations</h3>
+            <div className="row p-0 m-0">
+              <h1 style={{marginBottom: '10px', marginTop: '10px', color: 'white', paddingLeft: '12px', margin: '0', fontSize: '29px', textDecoration: 'underline'}}>Violations</h1>
             </div>
-            <table className='violationTable'>
-                  <tr>
-                    <th>Employee Id</th>
-                    <th>Employee Name</th>
-                    <th>CNIC</th>
-                    <th>User Type/Role</th>
-                    <th>Zone</th>
-                    <th>Critical Violations</th>
-                    <th>Low-Level Violations</th>
-                    <th>Operations</th>                    
-                  </tr> 
-            {<ShowViolationData/>}
-            </table>
+            <div className="row ms-2 my-2 p-1 search">
+              <div className="col-1 p-0">
+                  <img src="\searchIcon.webp" alt=""></img>
+              </div>
+              <div className="col-11 p-0">
+                  <p>Search Users by Employee ID, CNIC, or Mobile Number</p>
+              </div>
+            </div>
+
+            <div className='container col-12 p-0 px-2'>
+              <table className='violationTable p-0'>
+                    <tr>
+                      <th>Employee Id</th>
+                      <th>Employee Name</th>
+                      <th>CNIC</th>
+                      <th>User Type/Role</th>
+                      <th>Zone</th>
+                      <th>Critical Violations</th>
+                      <th>Low-Level Violations</th>
+                      <th>Operations</th>                    
+                    </tr> 
+              {<ShowViolationData/>}
+              </table>
+            </div>
+            
         </div>
           
     </div>
