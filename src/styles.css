@@ -120,7 +120,10 @@ html,body{
 
 .bi-person-circle{
   font-size: 90px;
-  padding-left: 20%;
+  padding-left: 30%;
   
 }
 
+.vtDetails{
+  max-height: 235px;
+}
