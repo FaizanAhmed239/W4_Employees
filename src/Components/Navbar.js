@@ -2,19 +2,20 @@ import React from 'react'
 
 export default function Navbar() {
   return (
-    <div className='container-fluid' style={{background: '#A19B9E', borderColor: '#707070'}}>
-      <div className='row'>
-       <div className='col-2 py-2'>
-        <h6>Welcome: Junaid Atif</h6>
+    <div className='container-fluid navContainer'>
+      <div className='row align-items-center'>
+       <div className='col-2'>
+        <h6 className='navCenter'>Welcome: <span className='navSpan'>Junaid Atif</span></h6>
        </div>
        <div className='col-7'>
+        <h6 className='navCenter'>W3 Employees</h6>     
         
        </div>
-       <div className='col-2 py-2 ps-4'>
-        Signed In as: Admin
+       <div className='col-2'>
+        <h6 className='navCenter'>Signed In as: <span className='navSpan'>Admin</span></h6>
        </div>
        <div className='col-1 p-0 py-1'>
-        <div className='btn btn-dark'>Logout</div>
+        <div className='btn btn-dark p-1'>Logout</div>
        </div>
       </div>
     </div>
