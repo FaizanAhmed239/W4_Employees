@@ -2,6 +2,7 @@ import React from 'react'
 import Button from 'react-bootstrap/Button';
 import {useState,useEffect} from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap-icons/font/bootstrap-icons.css';
 import {
   Link,
 } from 'react-router-dom';
@@ -50,7 +51,6 @@ export default function Violations() {
     )
   } 
  console.log(ShowViolationData);
-{/* <img src=='/icon.svg'></img> */}
   return (
     <div className='p-2' style={{background: '#DCDCDC', borderColor: '#707070',height:'82vh'}}>
         <div className='container' style={{background: '#A19B9E', border: '1px solid #707070', borderRadius:'5px', height:'80vh'}}>

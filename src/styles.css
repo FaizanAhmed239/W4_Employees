@@ -60,6 +60,7 @@ html,body{
 
 /*18-Nov-22*/
 
+/* NAVBAR */
 .navContainer{
   background: #A19B9E; 
   border-color: #707070;
@@ -83,7 +84,9 @@ html,body{
 .navLink:hover{
   color: black;
 }
+/* NAVBAR */
 
+/* HOME */
 .homeLogo{
   background-color: #DCDCDC; 
   background-image: url(E:\FYP\Front\W4_Employees\public\backgroundlogo.png); 
@@ -92,5 +95,32 @@ html,body{
   height: 450px;
   opacity: 12%;
   margin-left: 27%;
+}
+/* HOME */
+
+/* VIOLATION-DETAILS */
+.uoList0{
+  list-style-type: none;
+  font-weight: bold;
+  font-size: small;
+  line-height: 0.8cm;
+}
+
+.uoList1{
+  list-style-type: none;
+  font-size: small;
+  line-height: 0.8cm;
+  padding-left: 0;
+}
+
+.bi-arrow-left{
+  color: black;
+  font-size: x-large;
+}
+
+.bi-person-circle{
+  font-size: 90px;
+  padding-left: 20%;
+  
 }
 
