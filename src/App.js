@@ -31,7 +31,7 @@ function App() {
                         </div>
                         <div className='col-10 p-0'>
                         <Routes>
-                              <Route path="/" element={<Home/>} />
+                              <Route path="/home" element={<Home/>} />
                               <Route path="/registration" element={<Registration/>} />
                               <Route path="/attendance" element={<Attendance/>} />
                               <Route path="/violations" element={<Violations/>} />
