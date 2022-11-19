@@ -11,31 +11,31 @@ import {
 export default function ViolationDetails() {
 
   const [data,setData] = useState([
-  {'id':'', 'name':"Low-Level", 'cnic': '4', 'role':"Smoking", 'zone':'A', 'critviolnum':'12-06-2022 13:40:33', 'lowviolnum':'0 hour 35 min 10 sec', 'policyid':3},
-  {'id':'', 'name':"Low-Level", 'cnic': '4', 'role':"Smoking", 'zone':'A', 'critviolnum':'12-06-2022 13:40:33', 'lowviolnum':'0 hour 35 min 10 sec', 'policyid':3},
-  {'id':'', 'name':"Critical", 'cnic': '4', 'role':"Smoking", 'zone':'C', 'critviolnum':'12-06-2022 13:40:33', 'lowviolnum':'0 hour 35 min 10 sec', 'policyid':3},
-  {'id':'', 'name':"Critical", 'cnic': '4', 'role':"Smoking", 'zone':'A', 'critviolnum':'12-06-2022 13:40:33', 'lowviolnum':'0 hour 35 min 10 sec', 'policyid':3},
-  {'id':'', 'name':"Critical", 'cnic': '4', 'role':"Vaping", 'zone':'B', 'critviolnum':'12-06-2022 13:40:33', 'lowviolnum':'0 hour 35 min 10 sec', 'policyid':3},
-  {'id':'', 'name':"Critical", 'cnic': '4', 'role':"Smoking", 'zone':'A', 'critviolnum':'12-06-2022 13:40:33', 'lowviolnum':'0 hour 35 min 10 sec', 'policyid':3},
-  {'id':'', 'name':"Critical", 'cnic': '4', 'role':"Vaping", 'zone':'B', 'critviolnum':'12-06-2022 13:40:33', 'lowviolnum':'0 hour 35 min 10 sec', 'policyid':3},
-  {'id':'', 'name':"Critical", 'cnic': '4', 'role':"Smoking", 'zone':'A', 'critviolnum':'12-06-2022 13:40:33', 'lowviolnum':'0 hour 35 min 10 sec', 'policyid':3},
-  {'id':'', 'name':"Critical", 'cnic': '4', 'role':"Vaping", 'zone':'B', 'critviolnum':'12-06-2022 13:40:33', 'lowviolnum':'0 hour 35 min 10 sec', 'policyid':3},
-  {'id':'', 'name':"Critical", 'cnic': '4', 'role':"Smoking", 'zone':'A', 'critviolnum':'12-06-2022 13:40:33', 'lowviolnum':'0 hour 35 min 10 sec', 'policyid':3},
-  {'id':'', 'name':"Critical", 'cnic': '4', 'role':"Vaping", 'zone':'B', 'critviolnum':'12-06-2022 13:40:33', 'lowviolnum':'0 hour 35 min 10 sec', 'policyid':3},
-  {'id':'', 'name':"Critical", 'cnic': '4', 'role':"Smoking", 'zone':'A', 'critviolnum':'12-06-2022 13:40:33', 'lowviolnum':'0 hour 35 min 10 sec', 'policyid':3},
-  {'id':'', 'name':"Critical", 'cnic': '4', 'role':"Vaping", 'zone':'B', 'critviolnum':'12-06-2022 13:40:33', 'lowviolnum':'0 hour 35 min 10 sec', 'policyid':3},
-  {'id':'', 'name':"Critical", 'cnic': '4', 'role':"Smoking", 'zone':'A', 'critviolnum':'12-06-2022 13:40:33', 'lowviolnum':'0 hour 35 min 10 sec', 'policyid':3},
-  {'id':'', 'name':"Critical", 'cnic': '4', 'role':"Vaping", 'zone':'B', 'critviolnum':'12-06-2022 13:40:33', 'lowviolnum':'0 hour 35 min 10 sec', 'policyid':3},
-  {'id':'', 'name':"Critical", 'cnic': '4', 'role':"Smoking", 'zone':'A', 'critviolnum':'12-06-2022 13:40:33', 'lowviolnum':'0 hour 35 min 10 sec', 'policyid':3},
-  {'id':'', 'name':"Critical", 'cnic': '4', 'role':"Vaping", 'zone':'B', 'critviolnum':'12-06-2022 13:40:33', 'lowviolnum':'0 hour 35 min 10 sec', 'policyid':3},
-  {'id':'', 'name':"Critical", 'cnic': '4', 'role':"Smoking", 'zone':'A', 'critviolnum':'12-06-2022 13:40:33', 'lowviolnum':'0 hour 35 min 10 sec', 'policyid':3},
-  {'id':'', 'name':"Critical", 'cnic': '4', 'role':"Vaping", 'zone':'B', 'critviolnum':'12-06-2022 13:40:33', 'lowviolnum':'0 hour 35 min 10 sec', 'policyid':3},
-  {'id':'', 'name':"Critical", 'cnic': '4', 'role':"Smoking", 'zone':'A', 'critviolnum':'12-06-2022 13:40:33', 'lowviolnum':'0 hour 35 min 10 sec', 'policyid':3},
-  {'id':'', 'name':"Critical", 'cnic': '4', 'role':"Vaping", 'zone':'B', 'critviolnum':'12-06-2022 13:40:33', 'lowviolnum':'0 hour 35 min 10 sec', 'policyid':3},
-  {'id':'', 'name':"Low-Level", 'cnic': '4', 'role':"Shooting", 'zone':'A', 'critviolnum':'12-06-2022 13:40:33', 'lowviolnum':'0 hour 35 min 10 sec', 'policyid':3},
-  {'id':'', 'name':"Low-Level", 'cnic': '4', 'role':"Shooting", 'zone':'A', 'critviolnum':'12-06-2022 13:40:33', 'lowviolnum':'0 hour 35 min 10 sec', 'policyid':3},
-  {'id':'', 'name':"Low-Level", 'cnic': '4', 'role':"Shooting", 'zone':'D', 'critviolnum':'12-06-2022 13:40:33', 'lowviolnum':'0 hour 35 min 10 sec', 'policyid':3},
-  {'id':'', 'name':"Critical", 'cnic': '4', 'role':"Shooting", 'zone':'A', 'critviolnum':'12-06-2022 13:40:33', 'lowviolnum':'0 hour 35 min 10 sec', 'policyid':3}
+  {'icon':'', 'type':"Low-Level", 'vId': '4', 'actInv':"Smoking", 'zone':'A', 'vDateTime':'12-06-2022 13:40:33', 'dur':'0 hour 35 min 10 sec', 'policyid':3},
+  {'icon':'', 'type':"Low-Level", 'vId': '4', 'actInv':"Smoking", 'zone':'A', 'vDateTime':'12-06-2022 13:40:33', 'dur':'0 hour 35 min 10 sec', 'policyid':3},
+  {'icon':'', 'type':"Critical", 'vId': '4', 'actInv':"Smoking", 'zone':'C', 'vDateTime':'12-06-2022 13:40:33', 'dur':'0 hour 35 min 10 sec', 'policyid':3},
+  {'icon':'', 'type':"Critical", 'vId': '4', 'actInv':"Smoking", 'zone':'A', 'vDateTime':'12-06-2022 13:40:33', 'dur':'0 hour 35 min 10 sec', 'policyid':3},
+  {'icon':'', 'type':"Critical", 'vId': '4', 'actInv':"Vaping", 'zone':'B', 'vDateTime':'12-06-2022 13:40:33', 'dur':'0 hour 35 min 10 sec', 'policyid':3},
+  {'icon':'', 'type':"Critical", 'vId': '4', 'actInv':"Smoking", 'zone':'A', 'vDateTime':'12-06-2022 13:40:33', 'dur':'0 hour 35 min 10 sec', 'policyid':3},
+  {'icon':'', 'type':"Critical", 'vId': '4', 'actInv':"Vaping", 'zone':'B', 'vDateTime':'12-06-2022 13:40:33', 'dur':'0 hour 35 min 10 sec', 'policyid':3},
+  {'icon':'', 'type':"Critical", 'vId': '4', 'actInv':"Smoking", 'zone':'A', 'vDateTime':'12-06-2022 13:40:33', 'dur':'0 hour 35 min 10 sec', 'policyid':3},
+  {'icon':'', 'type':"Critical", 'vId': '4', 'actInv':"Vaping", 'zone':'B', 'vDateTime':'12-06-2022 13:40:33', 'dur':'0 hour 35 min 10 sec', 'policyid':3},
+  {'icon':'', 'type':"Critical", 'vId': '4', 'actInv':"Smoking", 'zone':'A', 'vDateTime':'12-06-2022 13:40:33', 'dur':'0 hour 35 min 10 sec', 'policyid':3},
+  {'icon':'', 'type':"Critical", 'vId': '4', 'actInv':"Vaping", 'zone':'B', 'vDateTime':'12-06-2022 13:40:33', 'dur':'0 hour 35 min 10 sec', 'policyid':3},
+  {'icon':'', 'type':"Critical", 'vId': '4', 'actInv':"Smoking", 'zone':'A', 'vDateTime':'12-06-2022 13:40:33', 'dur':'0 hour 35 min 10 sec', 'policyid':3},
+  {'icon':'', 'type':"Critical", 'vId': '4', 'actInv':"Vaping", 'zone':'B', 'vDateTime':'12-06-2022 13:40:33', 'dur':'0 hour 35 min 10 sec', 'policyid':3},
+  {'icon':'', 'type':"Critical", 'vId': '4', 'actInv':"Smoking", 'zone':'A', 'vDateTime':'12-06-2022 13:40:33', 'dur':'0 hour 35 min 10 sec', 'policyid':3},
+  {'icon':'', 'type':"Critical", 'vId': '4', 'actInv':"Vaping", 'zone':'B', 'vDateTime':'12-06-2022 13:40:33', 'dur':'0 hour 35 min 10 sec', 'policyid':3},
+  {'icon':'', 'type':"Critical", 'vId': '4', 'actInv':"Smoking", 'zone':'A', 'vDateTime':'12-06-2022 13:40:33', 'dur':'0 hour 35 min 10 sec', 'policyid':3},
+  {'icon':'', 'type':"Critical", 'vId': '4', 'actInv':"Vaping", 'zone':'B', 'vDateTime':'12-06-2022 13:40:33', 'dur':'0 hour 35 min 10 sec', 'policyid':3},
+  {'icon':'', 'type':"Critical", 'vId': '4', 'actInv':"Smoking", 'zone':'A', 'vDateTime':'12-06-2022 13:40:33', 'dur':'0 hour 35 min 10 sec', 'policyid':3},
+  {'icon':'', 'type':"Critical", 'vId': '4', 'actInv':"Vaping", 'zone':'B', 'vDateTime':'12-06-2022 13:40:33', 'dur':'0 hour 35 min 10 sec', 'policyid':3},
+  {'icon':'', 'type':"Critical", 'vId': '4', 'actInv':"Smoking", 'zone':'A', 'vDateTime':'12-06-2022 13:40:33', 'dur':'0 hour 35 min 10 sec', 'policyid':3},
+  {'icon':'', 'type':"Critical", 'vId': '4', 'actInv':"Vaping", 'zone':'B', 'vDateTime':'12-06-2022 13:40:33', 'dur':'0 hour 35 min 10 sec', 'policyid':3},
+  {'icon':'', 'type':"Low-Level", 'vId': '4', 'actInv':"Shooting", 'zone':'A', 'vDateTime':'12-06-2022 13:40:33', 'dur':'0 hour 35 min 10 sec', 'policyid':3},
+  {'icon':'', 'type':"Low-Level", 'vId': '4', 'actInv':"Shooting", 'zone':'A', 'vDateTime':'12-06-2022 13:40:33', 'dur':'0 hour 35 min 10 sec', 'policyid':3},
+  {'icon':'', 'type':"Low-Level", 'vId': '4', 'actInv':"Shooting", 'zone':'D', 'vDateTime':'12-06-2022 13:40:33', 'dur':'0 hour 35 min 10 sec', 'policyid':3},
+  {'icon':'', 'type':"Critical", 'vId': '4', 'actInv':"Shooting", 'zone':'A', 'vDateTime':'12-06-2022 13:40:33', 'dur':'0 hour 35 min 10 sec', 'policyid':3}
 
   ]);
   
@@ -45,32 +45,32 @@ export default function ViolationDetails() {
     return(
     <>
     
-    {data.map((employee,i)=>{
+    {data.map((vio,i)=>{
         return(
-          <div key={i} className='row my-2 mx-1 p-0 py-1 fs-7' style={{backgroundColor: '#A19B9E', borderRadius:'5px'}}>
-              <div className='col-1 ps-0 text-center'>
+          <div key={i} className='row my-2 mx-1 p-0 py-1 align-items-center' style={{backgroundColor: '#A19B9E', borderRadius:'5px', fontSize: '12px'}}>
+              <div className='col-1 text-center border border-dark'>
                 <i class="bi bi-exclamation-triangle"></i>
               </div>
-              <div className='col-1 text-center'>
-                  {employee.name}
+              <div className='col-1 text-center border border-dark'>
+                  {vio.type}
               </div>
-              <div className='col-1 ps-4 text-center'>
-                  {employee.cnic}
+              <div className='col-1 text-center border border-dark'>
+                  {vio.vId}
               </div>
-              <div className='col-2 ps-5 text-center'>
-                  {employee.role}
+              <div className='col-2 text-center border border-dark'>
+                  {vio.actInv}
               </div>
-              <div className='col-1 ps-4 text-center'>
-                  {employee.zone}
+              <div className='col-1 text-center border border-dark'>
+                  {vio.zone}
               </div>
-              <div className='col-2 ps-5 text-center'>
-                  {employee.critviolnum}
+              <div className='col-3 text-center border border-dark'>
+                  {vio.vDateTime}
               </div>
-              <div className='col-2 ps-4 text-center'>
-                  {employee.lowviolnum}
+              <div className='col-2 text-center border border-dark'>
+                  {vio.dur}
               </div>
-              <div className='col-1 ps-4 text-center'>
-                  {employee.policyid}
+              <div className='col-1 text-center border border-dark'>
+                  {vio.policyid}
               </div>
            </div>
           )})}            
@@ -115,29 +115,29 @@ export default function ViolationDetails() {
             </div>
             <div className='container my-3'>    
 
-              <div className='row m-0 p-0 py-1 fs-7' style={{}}>
-                <div className='col-1 ps-1 text-center'>
+              <div className='row m-0 pe-3 py-1 fs-7 align-items-center'>
+                <div className='col-1 text-center'>
                   Violation Level
                 </div>
-                <div className='col-1 ps-1 text-center'>
+                <div className='col-1 text-center'>
                   Violation Type  
                 </div>
-                <div className='col-1 ps-4 text-center'>
+                <div className='col-1 text-center'>
                   Violation Id
                 </div>
-                <div className='col-2 ps-4 text-center'>
+                <div className='col-2 text-center'>
                   Activity Involved
                 </div>
-                <div className='col-1 ps-3 text-center'>
+                <div className='col-1 text-center'>
                   Zone
                 </div>
-                <div className='col-2 ps-4 text-center'>
+                <div className='col-3 text-center'>
                   Date/Time of Violation
                 </div>
-                <div className='col-2 ps-2 text-center'>
+                <div className='col-2 text-center'>
                   Duration
                 </div>
-                <div className='col-1 ps-0 text-center'>
+                <div className='col-1 text-center'>
                   Policy Id
                 </div>
               </div>
