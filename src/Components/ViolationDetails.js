@@ -113,7 +113,7 @@ export default function ViolationDetails() {
               </div>
               
             </div>
-            <div className='container my-3'>    
+            <div className='container mb-3'>    
 
               <div className='row m-0 pe-3 py-1 fs-7 align-items-center'>
                 <div className='col-1 text-center'>
@@ -142,7 +142,7 @@ export default function ViolationDetails() {
                 </div>
               </div>
               
-              <div style={{maxHeight: '140px', display: 'block', overflowY: 'scroll'}}>
+              <div style={{height: '150px', display: 'block', overflowY: 'scroll'}}>
                 {<ShowViolationData/>}                
               </div>
             </div>

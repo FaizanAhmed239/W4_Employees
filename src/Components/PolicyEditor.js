@@ -4,20 +4,20 @@ import {React,useState} from 'react'
 export default function PolicyEditor() {
 
     const [data, setData] = useState([
-        {'id':123, 'activity':"smoking", 'time': '5min', 'zone':"A", 'intensity':'high', 'enabled': 'On'},
-        {'id':123, 'activity':"smoking", 'time': '5min', 'zone':"A", 'intensity':'high', 'enabled': 'Off'},
-        {'id':123, 'activity':"smoking", 'time': '5min', 'zone':"A", 'intensity':'high', 'enabled': "On"},
-        {'id':123, 'activity':"smoking", 'time': '5min', 'zone':"A", 'intensity':'high', 'enabled': "On"},
-        {'id':123, 'activity':"smoking", 'time': '5min', 'zone':"A", 'intensity':'high', 'enabled': 'Off'},
-        {'id':123, 'activity':"smoking", 'time': '5min', 'zone':"A", 'intensity':'high', 'enabled': "On"},
-        {'id':123, 'activity':"smoking", 'time': '5min', 'zone':"A", 'intensity':'high', 'enabled': "On"},
-        {'id':123, 'activity':"smoking", 'time': '5min', 'zone':"A", 'intensity':'high', 'enabled': 'Off'},
-        {'id':123, 'activity':"smoking", 'time': '5min', 'zone':"A", 'intensity':'high', 'enabled': "On"},
-        {'id':123, 'activity':"smoking", 'time': '5min', 'zone':"A", 'intensity':'high', 'enabled': "On"},
-        {'id':123, 'activity':"smoking", 'time': '5min', 'zone':"A", 'intensity':'high', 'enabled': "On"}
+        {'id':123, 'activity':"smoking", 'time': '5min', 'zone':"A", 'intensity':'high', 'enabled': ''},
+        {'id':123, 'activity':"smoking", 'time': '5min', 'zone':"A", 'intensity':'high', 'enabled': ''},
+        {'id':123, 'activity':"smoking", 'time': '5min', 'zone':"A", 'intensity':'high', 'enabled': ""},
+        {'id':123, 'activity':"smoking", 'time': '5min', 'zone':"A", 'intensity':'high', 'enabled': ""},
+        {'id':123, 'activity':"smoking", 'time': '5min', 'zone':"A", 'intensity':'high', 'enabled': ''},
+        {'id':123, 'activity':"smoking", 'time': '5min', 'zone':"A", 'intensity':'high', 'enabled': ""},
+        {'id':123, 'activity':"smoking", 'time': '5min', 'zone':"A", 'intensity':'high', 'enabled': ""},
+        {'id':123, 'activity':"smoking", 'time': '5min', 'zone':"A", 'intensity':'high', 'enabled': ''},
+        {'id':123, 'activity':"smoking", 'time': '5min', 'zone':"A", 'intensity':'high', 'enabled': ""},
+        {'id':123, 'activity':"smoking", 'time': '5min', 'zone':"A", 'intensity':'high', 'enabled': ""},
+        {'id':123, 'activity':"smoking", 'time': '5min', 'zone':"A", 'intensity':'high', 'enabled': ""}
     ]);
 
-    const DisplayPoliciy=()=>{
+    const DisplayPolicy=()=>{
         return(
             <>       
             {data.map((policy,i)=>{
@@ -36,11 +36,15 @@ export default function PolicyEditor() {
                         <div className='col-2 text-center'>
                             {policy.intensity}
                         </div>
-                        <div className='col-2 text-center'>
-                            edit delete
+                        <div className='col-2 ps-4 text-center'>
+                            <i class="bi bi-pencil-square"></i>
+                            <i class="bi bi-trash3 ps-3"></i>
                         </div>
-                        <div className='col-2 text-center'>
-                            {policy.enabled}
+                        <div className='col-2 ps-5 text-center'>
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault"/>
+                                <label class="form-check-label" for="flexSwitchCheckDefault"></label>
+                            </div>
                         </div>
                     </div>            
                   )})}            
@@ -85,7 +89,7 @@ export default function PolicyEditor() {
                     </div>
                 </div>
                 <div style={{maxHeight: '330px', display: 'block', overflowY: 'scroll'}}>
-                    {<DisplayPoliciy/>}                
+                    {<DisplayPolicy/>}                
                 </div>
             </div>
 
