@@ -141,3 +141,23 @@ html,body{
   color: yellow;
 }
 /* VIOLATION-DETAILS */
+
+/* SYSTEM CONTROL */
+.topHeading{
+  padding-top: 10px;
+  text-align: left;
+  text-decoration: underline;
+  color: white; 
+  font-size: 29px; 
+}
+
+.formNum{
+  border-radius: 10px;
+}
+
+.inpTime{
+  margin-left: 6px;
+  width: 28%;
+}
+
+/* SYSTEM CONTROL */

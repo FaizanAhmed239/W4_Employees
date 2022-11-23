@@ -1,20 +1,24 @@
 import {React,useState} from 'react'
+import {
+    Link,
+  } from 'react-router-dom';
+  
 
 
 export default function PolicyEditor() {
 
     const [data, setData] = useState([
-        {'id':123, 'activity':"smoking", 'time': '5min', 'zone':"A", 'intensity':'high', 'enabled': ''},
-        {'id':123, 'activity':"smoking", 'time': '5min', 'zone':"A", 'intensity':'high', 'enabled': ''},
-        {'id':123, 'activity':"smoking", 'time': '5min', 'zone':"A", 'intensity':'high', 'enabled': ""},
-        {'id':123, 'activity':"smoking", 'time': '5min', 'zone':"A", 'intensity':'high', 'enabled': ""},
-        {'id':123, 'activity':"smoking", 'time': '5min', 'zone':"A", 'intensity':'high', 'enabled': ''},
-        {'id':123, 'activity':"smoking", 'time': '5min', 'zone':"A", 'intensity':'high', 'enabled': ""},
-        {'id':123, 'activity':"smoking", 'time': '5min', 'zone':"A", 'intensity':'high', 'enabled': ""},
-        {'id':123, 'activity':"smoking", 'time': '5min', 'zone':"A", 'intensity':'high', 'enabled': ''},
-        {'id':123, 'activity':"smoking", 'time': '5min', 'zone':"A", 'intensity':'high', 'enabled': ""},
-        {'id':123, 'activity':"smoking", 'time': '5min', 'zone':"A", 'intensity':'high', 'enabled': ""},
-        {'id':123, 'activity':"smoking", 'time': '5min', 'zone':"A", 'intensity':'high', 'enabled': ""}
+        {'id':123, 'activity':"smoking", 'time': '5min', 'zone':"A", 'IsAllowed':'True', 'enabled': ''},
+        {'id':123, 'activity':"smoking", 'time': '5min', 'zone':"A", 'IsAllowed':'True', 'enabled': ''},
+        {'id':123, 'activity':"smoking", 'time': '5min', 'zone':"A", 'IsAllowed':'True', 'enabled': ""},
+        {'id':123, 'activity':"smoking", 'time': '5min', 'zone':"A", 'IsAllowed':'True', 'enabled': ""},
+        {'id':123, 'activity':"smoking", 'time': '5min', 'zone':"A", 'IsAllowed':'True', 'enabled': ''},
+        {'id':123, 'activity':"smoking", 'time': '5min', 'zone':"A", 'IsAllowed':'False', 'enabled': ""},
+        {'id':123, 'activity':"smoking", 'time': '5min', 'zone':"A", 'IsAllowed':'False', 'enabled': ""},
+        {'id':123, 'activity':"smoking", 'time': '5min', 'zone':"A", 'IsAllowed':'False', 'enabled': ''},
+        {'id':123, 'activity':"smoking", 'time': '5min', 'zone':"A", 'IsAllowed':'False', 'enabled': ""},
+        {'id':123, 'activity':"smoking", 'time': '5min', 'zone':"A", 'IsAllowed':'False', 'enabled': ""},
+        {'id':123, 'activity':"smoking", 'time': '5min', 'zone':"A", 'IsAllowed':'False', 'enabled': ""}
     ]);
 
     const DisplayPolicy=()=>{
@@ -34,7 +38,7 @@ export default function PolicyEditor() {
                             {policy.zone}
                         </div>
                         <div className='col-2 text-center'>
-                            {policy.intensity}
+                            {policy.IsAllowed}
                         </div>
                         <div className='col-2 ps-4 text-center'>
                             <i class="bi bi-pencil-square"></i>
@@ -56,13 +60,15 @@ export default function PolicyEditor() {
     <div className='p-2' style={{background: '#DCDCDC', borderColor: '#707070',height:'82vh'}}>
         <div className='container' style={{background: '#A19B9E', border: '1px solid #707070', borderRadius:'5px', height:'80vh'}}>
             <div className="row p-0 m-0 justify-content-between">
-                <h1 className='col-2 p-0 pt-2 ms-3' style={{borderBottom: '1px solid white', marginBottom: '50px', marginTop: '10px', color: 'white', paddingLeft: '12px', margin: '0', fontSize: '29px'}}>
+                <h1 className='col-2 topHeading'>
                     Policies
                 </h1>
                 <div className='col-1 ps-3 py-1'>
-                    <div className='btn btn-dark py-0' style={{borderRadius: '50px'}}>
-                        <h3 className='p-0'>+</h3>
-                    </div>
+                    <Link to='/addpolicy'>
+                        <div className='btn btn-dark py-0' style={{borderRadius: '50px'}}>
+                            <h3 className='p-0'>+</h3>
+                        </div>
+                    </Link>
                 </div>
             </div>
 
@@ -79,7 +85,7 @@ export default function PolicyEditor() {
                         Zone
                     </div>
                     <div className='col-2 text-center'>
-                        Intensity
+                        IsAllowed
                     </div>
                     <div className='col-2 text-center'>
                         Edit/Delete
