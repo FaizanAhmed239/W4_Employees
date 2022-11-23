@@ -49,7 +49,11 @@ export default function ViolationDetails() {
         return(
           <div key={i} className='row my-2 mx-1 p-0 py-1 align-items-center' style={{backgroundColor: '#A19B9E', borderRadius:'5px', fontSize: '12px'}}>
               <div className='col-1 text-center border border-dark'>
-                {vio.type === 'Critical' ? (<i class="bi bi-exclamation-triangle-fill"></i> ) : (<i class="bi bi-exclamation-triangle"></i>)}
+                {
+                  vio.type === 'Critical' ? (<i class="bi bi-exclamation-triangle-fill"></i> )
+                  : 
+                  (<i class="bi bi-exclamation-triangle"></i>)
+                }
                    
               </div>
               <div className='col-1 text-center'>
