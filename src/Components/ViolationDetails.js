@@ -49,9 +49,10 @@ export default function ViolationDetails() {
         return(
           <div key={i} className='row my-2 mx-1 p-0 py-1 align-items-center' style={{backgroundColor: '#A19B9E', borderRadius:'5px', fontSize: '12px'}}>
               <div className='col-1 text-center border border-dark'>
-                <i class="bi bi-exclamation-triangle"></i>
+                {vio.type === 'Critical' ? (<i class="bi bi-exclamation-triangle-fill"></i> ) : (<i class="bi bi-exclamation-triangle"></i>)}
+                   
               </div>
-              <div className='col-1 text-center border border-dark'>
+              <div className='col-1 text-center'>
                   {vio.type}
               </div>
               <div className='col-1 text-center border border-dark'>
@@ -142,7 +143,7 @@ export default function ViolationDetails() {
                 </div>
               </div>
               
-              <div style={{height: '150px', display: 'block', overflowY: 'scroll'}}>
+              <div className='vioTable' style={{height: '150px', display: 'block', overflowY: 'scroll'}}>
                 {<ShowViolationData/>}                
               </div>
             </div>

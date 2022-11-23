@@ -127,3 +127,8 @@ html,body{
 .vtDetails{
   max-height: 235px;
 }
+
+.vioTable::-webkit-scrollbar{ /* WebKit */
+  width: 0;
+  height: 0;
+}

@@ -14,7 +14,7 @@ export default function Navbar() {
         <div className='col-7'>
           <div className='row justify-content-center'>
             <Link to="/home" className='col-3 navLink p-0'>
-                <h6 className='navCenter'>W3 Employees</h6>
+                <h6 className='navCenter'>W4 Employees</h6>
             </Link>
           </div>         
         </div>        
