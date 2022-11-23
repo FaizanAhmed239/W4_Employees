@@ -14,7 +14,7 @@ export default function ViolationDetails() {
   {'icon':'', 'type':"Low-Level", 'vId': '4', 'actInv':"Smoking", 'zone':'A', 'vDateTime':'12-06-2022 13:40:33', 'dur':'0 hour 35 min 10 sec', 'policyid':3},
   {'icon':'', 'type':"Low-Level", 'vId': '4', 'actInv':"Smoking", 'zone':'A', 'vDateTime':'12-06-2022 13:40:33', 'dur':'0 hour 35 min 10 sec', 'policyid':3},
   {'icon':'', 'type':"Critical", 'vId': '4', 'actInv':"Smoking", 'zone':'C', 'vDateTime':'12-06-2022 13:40:33', 'dur':'0 hour 35 min 10 sec', 'policyid':3},
-  {'icon':'', 'type':"Critical", 'vId': '4', 'actInv':"Smoking", 'zone':'A', 'vDateTime':'12-06-2022 13:40:33', 'dur':'0 hour 35 min 10 sec', 'policyid':3},
+  {'icon':'', 'type':"Low-Level", 'vId': '4', 'actInv':"Smoking", 'zone':'A', 'vDateTime':'12-06-2022 13:40:33', 'dur':'0 hour 35 min 10 sec', 'policyid':3},
   {'icon':'', 'type':"Critical", 'vId': '4', 'actInv':"Vaping", 'zone':'B', 'vDateTime':'12-06-2022 13:40:33', 'dur':'0 hour 35 min 10 sec', 'policyid':3},
   {'icon':'', 'type':"Critical", 'vId': '4', 'actInv':"Smoking", 'zone':'A', 'vDateTime':'12-06-2022 13:40:33', 'dur':'0 hour 35 min 10 sec', 'policyid':3},
   {'icon':'', 'type':"Critical", 'vId': '4', 'actInv':"Vaping", 'zone':'B', 'vDateTime':'12-06-2022 13:40:33', 'dur':'0 hour 35 min 10 sec', 'policyid':3},
@@ -56,7 +56,7 @@ export default function ViolationDetails() {
                 }
                    
               </div>
-              <div className='col-1 text-center'>
+              <div className='col-1 text-center border border-dark'>
                   {vio.type}
               </div>
               <div className='col-1 text-center border border-dark'>
@@ -147,7 +147,7 @@ export default function ViolationDetails() {
                 </div>
               </div>
               
-              <div className='vioTable' style={{height: '150px', display: 'block', overflowY: 'scroll'}}>
+              <div className='vioDTable' style={{height: '150px', display: 'block', overflowY: 'scroll'}}>
                 {<ShowViolationData/>}                
               </div>
             </div>

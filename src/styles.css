@@ -89,7 +89,7 @@ html,body{
 /* HOME */
 .homeLogo{
   background-color: #DCDCDC; 
-  background-image: url(E:\FYP\Front\W4_Employees\public\backgroundlogo.png); 
+  background-image: url(/public/backgroundlogo.png); 
   background-size: contain;
   background-repeat:  no-repeat;
   height: 450px;
@@ -128,7 +128,16 @@ html,body{
   max-height: 235px;
 }
 
-.vioTable::-webkit-scrollbar{ /* WebKit */
+.vioDTable::-webkit-scrollbar{ /* WebKit */
   width: 0;
   height: 0;
 }
+
+.bi-exclamation-triangle-fill{
+  color: red;
+}
+
+.bi-exclamation-triangle{
+  color: yellow;
+}
+/* VIOLATION-DETAILS */
