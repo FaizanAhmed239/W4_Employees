@@ -13,7 +13,7 @@ export default function SystemControl() {
     background: '#707070'
   }
   const [styles,setStyles] = useState([
-    normalstyle,
+    hoverstyle,
     normalstyle
   ])
 

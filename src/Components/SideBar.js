@@ -34,10 +34,8 @@ export default function SideBar() {
                 </li>
                 <li className='row'>
                     <Link to="/performance Monitoring" className='col-12 p-1 sidebarLink'>Performance Monitoring</Link>   
-                </li> 
-                          
-              </ui>
-            
+                </li>               
+              </ui>          
         </div>
     </div>
     
