@@ -35,9 +35,7 @@ export default function ViolationDetails() {
   {'icon':'', 'type':"Low-Level", 'vId': '4', 'actInv':"Shooting", 'zone':'A', 'vDateTime':'12-06-2022 13:40:33', 'dur':'0 hour 35 min 10 sec', 'policyid':3},
   {'icon':'', 'type':"Low-Level", 'vId': '4', 'actInv':"Shooting", 'zone':'D', 'vDateTime':'12-06-2022 13:40:33', 'dur':'0 hour 35 min 10 sec', 'policyid':3},
   {'icon':'', 'type':"Critical", 'vId': '4', 'actInv':"Shooting", 'zone':'A', 'vDateTime':'12-06-2022 13:40:33', 'dur':'0 hour 35 min 10 sec', 'policyid':3}
-
   ]);
-  
    
   console.log(data);
   const ShowViolationData = () => {

@@ -6,7 +6,7 @@ import {
   Link,
 } from 'react-router-dom';
 
-export default function GroupManagement() {
+export default function EditPolicy() {
     const [duration, setDuration] = useState(0);
   return (
     <div className='p-2' style={{background: '#DCDCDC', borderColor: '#707070',height:'82vh'}}>

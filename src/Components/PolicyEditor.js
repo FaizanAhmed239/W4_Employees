@@ -21,6 +21,10 @@ export default function PolicyEditor() {
         {'id':123, 'activity':"smoking", 'time': '5min', 'zone':"A", 'IsAllowed':'False', 'enabled': ""}
     ]);
 
+    const handleDelete = (i, e) => {
+        setData(data.filter((item, a) => a !== i));
+      };
+
     const DisplayPolicy=()=>{
         return(
             <>       
@@ -42,7 +46,8 @@ export default function PolicyEditor() {
                         </div>
                         <div className='col-2 ps-4 text-center'>
                             <Link to='/editpolicy'><i class="bi bi-pencil-square"></i></Link>
-                            <i class="bi bi-trash3 ps-3"></i>
+                            <span> / </span>
+                            <i class="bi bi-trash3" onClick={(e) => handleDelete(i, e)}></i>
                         </div>
                         <div className='col-2 ps-5 text-center'>
                             <div class="form-check form-switch">
