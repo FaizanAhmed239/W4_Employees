@@ -10,8 +10,8 @@ export default function EditPolicy() {
     const [duration, setDuration] = useState(0);
   return (
     <div className='p-2' style={{background: '#DCDCDC', borderColor: '#707070',height:'82vh'}}>
-        <div className='container' style={{background: '#A19B9E', border: '1px solid #707070', borderRadius:'5px', height:'80vh'}}>
-            <div className='container bg-white p-2 my-3' style={{height: '72vh'}}>
+        <div className='container-fluid' style={{background: '#A19B9E', border: '1px solid #707070', borderRadius:'5px', height:'80vh'}}>
+            <div className='container-fluid bg-white p-2 my-3' style={{height: '72vh'}}>
                 <div className='row justify-content-center'>
                     <div className='col-4'>
                     <Link to='/policyeditor'><i className="bi bi-arrow-left"></i></Link>

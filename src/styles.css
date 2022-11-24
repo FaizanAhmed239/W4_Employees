@@ -1,3 +1,8 @@
+
+body{
+  width: 1240px;
+}
+
 html,body{
   background-color: #2D2B2C !important;
   padding: 20px !important;
@@ -30,10 +35,9 @@ html,body{
   border: 1px solid #707070;
 }
 .violationTable {
-  max-height: 350px;
+  height: 340px;
   text-align: center;
   border-collapse: collapse;
-  width: 940px;
   background-color: #F7F7F7;
   display: block;
   overflow-y: scroll;
@@ -120,12 +124,11 @@ html,body{
 
 .bi-person-circle{
   font-size: 90px;
-  padding-left: 30%;
-  
+  padding-left: 30%; 
 }
 
 .vtDetails{
-  max-height: 235px;
+  height: 235px;
 }
 
 .vioDTable::-webkit-scrollbar{ /* WebKit */

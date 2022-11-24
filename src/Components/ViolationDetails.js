@@ -83,8 +83,8 @@ export default function ViolationDetails() {
 
   return (
     <div className='p-2' style={{background: '#DCDCDC', borderColor: '#707070',height:'82vh'}}>
-        <div className='container' style={{background: '#A19B9E', border: '1px solid #707070', borderRadius:'5px', height:'80vh'}}>
-          <div className='container bg-white p-2 my-3'>
+        <div className='container-fluid' style={{background: '#A19B9E', border: '1px solid #707070', borderRadius:'5px', height:'80vh'}}>
+          <div className='container-fluid bg-white p-2 my-3'>
             <div className='row'>
                 <div className='col-2'>
                   <Link to='/violations'><i class="bi bi-arrow-left"></i></Link>
@@ -115,7 +115,7 @@ export default function ViolationDetails() {
               </div>
               
             </div>
-            <div className='container mb-3'>    
+            <div className='container-fluid mb-3'>    
 
               <div className='row m-0 pe-3 py-1 fs-7 align-items-center'>
                 <div className='col-1 text-center'>

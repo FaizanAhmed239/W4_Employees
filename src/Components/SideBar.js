@@ -6,8 +6,8 @@ import {
 export default function SideBar() {
   return (
     <div className='p-2' style={{background: '#DCDCDC', height:'82vh'}}>
-        <div className='container' style={{background: '#A19B9E', border: '1px solid #707070', borderRadius:'5px', height:'80vh'}}>
-              <ui className="" style={{listStyleType: 'none'}}>
+        <div className='container-fluid' style={{background: '#A19B9E', border: '1px solid #707070', borderRadius:'5px', height:'80vh'}}>
+              <ui style={{listStyleType: 'none'}}>
                 <li className='row'>
                     <Link to="/registration" className='col-12 p-1 sidebarLink'>Registration</Link>   
                 </li>

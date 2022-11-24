@@ -49,7 +49,7 @@ export default function Violations() {
  console.log(ShowViolationData);
   return (
     <div className='p-2' style={{background: '#DCDCDC', borderColor: '#707070',height:'82vh'}}>
-        <div className='container' style={{background: '#A19B9E', border: '1px solid #707070', borderRadius:'5px', height:'80vh'}}>
+        <div className='container-fluid' style={{background: '#A19B9E', border: '1px solid #707070', borderRadius:'5px', height:'80vh'}}>
             <div className="row p-0 m-0">
               <h1 className='col-2 topHeading'>
                 Violations
@@ -64,7 +64,7 @@ export default function Violations() {
               </div>
             </div>
 
-            <div className='container col-12 p-0 px-2'>
+            <div className='container-fluid col-12 p-0 px-2'>
               <table className='violationTable p-0'>
                     <tr>
                       <th>Employee Id</th>

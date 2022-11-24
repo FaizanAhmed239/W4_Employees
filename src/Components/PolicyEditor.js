@@ -21,10 +21,6 @@ export default function PolicyEditor() {
         {'id':123, 'activity':"smoking", 'time': '5min', 'zone':"A", 'IsAllowed':'False', 'enabled': ""}
     ]);
 
-    const handleDelete = (i, e) => {
-        setData(data.filter((item, a) => a !== i));
-      };
-
     const DisplayPolicy=()=>{
         return(
             <>       
@@ -47,7 +43,7 @@ export default function PolicyEditor() {
                         <div className='col-2 ps-4 text-center'>
                             <Link to='/editpolicy'><i class="bi bi-pencil-square"></i></Link>
                             <span> / </span>
-                            <i class="bi bi-trash3" onClick={(e) => handleDelete(i, e)}></i>
+                            <i class="bi bi-trash3"></i>
                         </div>
                         <div className='col-2 ps-5 text-center'>
                             <div class="form-check form-switch">
@@ -63,7 +59,7 @@ export default function PolicyEditor() {
   return (
     
     <div className='p-2' style={{background: '#DCDCDC', borderColor: '#707070',height:'82vh'}}>
-        <div className='container' style={{background: '#A19B9E', border: '1px solid #707070', borderRadius:'5px', height:'80vh'}}>
+        <div className='container-fluid' style={{background: '#A19B9E', border: '1px solid #707070', borderRadius:'5px', height:'80vh'}}>
             <div className="row p-0 m-0 justify-content-between">
                 <h1 className='col-2 topHeading'>
                     Policies
@@ -77,7 +73,7 @@ export default function PolicyEditor() {
                 </div>
             </div>
 
-            <div className='container my-3'>    
+            <div className='container-fluid my-3'>    
                 <div className='row my-0 mx-1 p-0 py-1' style={{color: 'white'}}>
                     
                     <div className='col-2 text-center'>
