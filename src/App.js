@@ -11,6 +11,7 @@ import RoleManagement from './Components/RoleManagement';
 import PolicyEditor from './Components/PolicyEditor';
 import ViolationDetails from './Components/ViolationDetails';
 import AddPolicy from './Components/AddPolicy';
+import EditPolicy from './Components/EditPolicy';
 import {
       BrowserRouter as Router,
       Routes,
@@ -42,6 +43,7 @@ function App() {
                               <Route path="/system Control" element={<SystemControl/>} />
                               <Route path="/violationdetails" element={<ViolationDetails/>} />
                               <Route path="/addpolicy" element={<AddPolicy/>} />
+                              <Route path="/editpolicy" element={<EditPolicy/>} />
                               <Route path="/policyeditor" element={<PolicyEditor/>} />
                               
                         </Routes>

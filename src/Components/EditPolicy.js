@@ -16,7 +16,7 @@ export default function GroupManagement() {
                     <div className='col-4'>
                     <Link to='/policyeditor'><i className="bi bi-arrow-left"></i></Link>
                     </div>
-                    <h1 className='col-8 fs-3 pt-1 text-dark'>Add New Policy</h1>
+                    <h1 className='col-8 fs-3 pt-1 text-dark'>Edit Policy</h1>
                 </div>
                 <form className="row g-3">
                    
@@ -65,7 +65,7 @@ export default function GroupManagement() {
                         </div>    
                     </div>                  
                     <div className="col-12 justify-centent-center">
-                        <button type="submit" className="btn btn-primary">Submit</button>
+                        <button type="submit" className="btn btn-primary">Update</button>
                     </div>
                 </form>
             </div>

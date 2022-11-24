@@ -41,7 +41,7 @@ export default function PolicyEditor() {
                             {policy.IsAllowed}
                         </div>
                         <div className='col-2 ps-4 text-center'>
-                            <i class="bi bi-pencil-square"></i>
+                            <Link to='/editpolicy'><i class="bi bi-pencil-square"></i></Link>
                             <i class="bi bi-trash3 ps-3"></i>
                         </div>
                         <div className='col-2 ps-5 text-center'>
