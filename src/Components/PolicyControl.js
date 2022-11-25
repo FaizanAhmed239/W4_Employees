@@ -54,7 +54,7 @@ export default function PolicyControl() {
   return (
     
     
-        <div className='container-fluid pt-4' style={{background: '#A19B9E', height:'75vh'}}>
+        // <div className='container-fluid pt-4' style={{background: '#A19B9E', height:'75vh'}}>
             
             <div className='container-fluid'>    
                 <div className='row my-0 mx-1 p-0 py-1' style={{color: 'white',background:'#707070'}}>
@@ -80,6 +80,6 @@ export default function PolicyControl() {
                 </div>
             </div>
 
-         </div>
+        //  </div>
   )
 }

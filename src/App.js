@@ -23,36 +23,35 @@ import {
 function App() {
   return (
       <Router>
-            <div className="App container-fluid">
+            <div className="App container-fluid" style={{height: '100%'}}>
                   <div className='row'>
-                        <div className='col-12 p-0'>
+                        {/* <div className='col-12 p-0'> */}
                               <Navbar/>
-                        </div>
+                        {/* </div> */}
                   </div>
                   <div className='row p-0'>
                         <div className='col-2 p-0'>
                               <SideBar/>
                         </div>
                         <div className='col-10 p-0'>
-                        <Routes>
-                              <Route path="/" element={<Home/>} />
-                              <Route path="/home" element={<Home/>} />
-                              <Route path="/registration" element={<Registration/>} />
-                              <Route path="/attendance" element={<Attendance/>} />
-                              <Route path="/violations" element={<Violations/>} />
-                              <Route path="/role management" element={<RoleManagement/>} />
-                              <Route path="/group Management" element={<GroupManagement/>} />
-                              
-                              <Route path="/violationdetails" element={<ViolationDetails/>} />
-                              <Route path="/addpolicy" element={<AddPolicy/>} />
-                              <Route path="/editpolicy" element={<EditPolicy/>} />
-                              <Route path="/policyeditor" element={<PolicyEditor/>} />
-                              <Route path="/system Control" element={<SystemControl/>} >
-                                    <Route index element={<ActivityControl />} />
-                                    <Route path="activitycontrol" element={<ActivityControl />} />
-                                    <Route path="policycontrol" element={<PolicyControl />} />   
-                              </Route>
-                        </Routes>
+                              <Routes>
+                                    <Route path="/" element={<Home/>} />
+                                    <Route path="/home" element={<Home/>} />
+                                    <Route path="/registration" element={<Registration/>} />
+                                    <Route path="/attendance" element={<Attendance/>} />
+                                    <Route path="/violations" element={<Violations/>} />
+                                    <Route path="/role management" element={<RoleManagement/>}/>
+                                    <Route path="/group Management" element={<GroupManagement/>}/>
+                                    <Route path="/violationdetails" element={<ViolationDetails/>}/>
+                                    <Route path="/addpolicy" element={<AddPolicy/>}/>
+                                    <Route path="/editpolicy" element={<EditPolicy/>}/>
+                                    <Route path="/policyeditor" element={<PolicyEditor/>}/>
+                                    <Route path="/system Control" element={<SystemControl/>}>
+                                          <Route index element={<ActivityControl/>}/>
+                                          <Route path="activitycontrol" element={<ActivityControl/>} />
+                                          <Route path="policycontrol" element={<PolicyControl/>}/>   
+                                    </Route>
+                              </Routes>
                         </div>
                   </div>
             </div>
