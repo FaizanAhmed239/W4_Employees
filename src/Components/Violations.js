@@ -51,8 +51,7 @@ export default function Violations() {
   } 
  console.log(ShowViolationData);
   return (
-    <div className='p-2' style={{background: '#DCDCDC', borderColor: '#707070',height:'82vh'}}>
-        <div className='container-fluid' style={{background: '#A19B9E', border: '1px solid #707070', borderRadius:'5px', height:'80vh'}}>
+        <div className='container-fluid my-2' style={{background: '#A19B9E', border: '1px solid #707070', borderRadius:'5px', height:'442px'}}>
             <div className="row p-0 m-0">
               <h1 className='col-2 topHeading'>
                 Violations
@@ -66,26 +65,20 @@ export default function Violations() {
                   <p>Search Users by Employee ID, CNIC, or Mobile Number</p>
               </div>
             </div>
-
-            <div className='container-fluid col-12 p-0 px-2'>
-              <table className='violationTable p-0'>
-                    <tr>
-                      <th>Employee Id</th>
-                      <th>Employee Name</th>
-                      <th>CNIC</th>
-                      <th>User Type/Role</th>
-                      <th>Zone</th>
-                      <th>Critical Violations</th>
-                      <th>Low-Level Violations</th>
-                      <th>Operations</th>                    
-                    </tr> 
+            <table className='violationTable my-0 mx-1 p-0'>
+              <tr>
+                <th>Employee Id</th>
+                <th>Employee Name</th>
+                <th>CNIC</th> 
+                <th>User Type/Role</th>
+                <th>Zone</th>
+                <th>Critical Violations</th>
+                <th>Low-Level Violations</th>
+                <th>Operations</th>                    
+              </tr> 
               {<ShowViolationData/>}
-              </table>
-            </div>
-            
+            </table>
         </div>
-          
-    </div>
   )
 }
 

@@ -2,8 +2,6 @@ import {React,useState} from 'react'
 import {
     Link,
   } from 'react-router-dom';
-  
-
 
 export default function PolicyEditor() {
 
@@ -56,10 +54,8 @@ export default function PolicyEditor() {
             </>
             )
     }
-  return (
-    
-    <div className='p-2' style={{background: '#DCDCDC', borderColor: '#707070',height:'82vh'}}>
-        <div className='container-fluid' style={{background: '#A19B9E', border: '1px solid #707070', borderRadius:'5px', height:'80vh'}}>
+  return ( 
+        <div className='container-fluid my-2' style={{background: '#A19B9E', border: '1px solid #707070', borderRadius:'5px', height:'442px'}}>
             <div className="row p-0 m-0 justify-content-between">
                 <h1 className='col-2 topHeading'>
                     Policies
@@ -72,35 +68,29 @@ export default function PolicyEditor() {
                     </Link>
                 </div>
             </div>
-
-            <div className='container-fluid my-3'>    
-                <div className='row my-0 mx-1 p-0 py-1' style={{color: 'white'}}>
-                    
-                    <div className='col-2 text-center'>
-                        Activity
-                    </div>
-                    <div className='col-2 text-center'>
-                        Time Duration
-                    </div>
-                    <div className='col-2 text-center'>
-                        Zone
-                    </div>
-                    <div className='col-2 text-center'>
-                        IsAllowed
-                    </div>
-                    <div className='col-2 text-center'>
-                        Edit/Delete
-                    </div>
-                    <div className='col-2 text-center'>
-                        Enabled/Disabled
-                    </div>
+            <div className='row my-0 mx-1 p-0 py-1' style={{color: 'white'}}>
+                <div className='col-2 text-center'>
+                    Activity
                 </div>
-                <div style={{maxHeight: '330px', display: 'block', overflowY: 'scroll'}}>
-                    {<DisplayPolicy/>}                
+                <div className='col-2 text-center'>
+                    Time Duration
+                </div>
+                <div className='col-2 text-center'>
+                    Zone
+                </div>
+                <div className='col-2 text-center'>
+                    IsAllowed
+                </div>
+                <div className='col-2 text-center'>
+                    Edit/Delete
+                </div>
+                <div className='col-2 text-center'>
+                    Enabled/Disabled
                 </div>
             </div>
-
-         </div>
-    </div>
+            <div className='row mx-0 mt-0 p-0' style={{display: 'block', overflowY: 'auto', overflowX: 'hidden', height: '78%'}}>
+                {<DisplayPolicy/>}                
+            </div>
+        </div>
   )
 }

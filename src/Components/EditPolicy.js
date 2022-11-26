@@ -6,12 +6,11 @@ import {
   Link,
 } from 'react-router-dom';
 
-export default function EditPolicy() {
+export default function AddPolicy() {
     const [duration, setDuration] = useState(0);
   return (
-    <div className='p-2' style={{background: '#DCDCDC', borderColor: '#707070',height:'82vh'}}>
-        <div className='container-fluid' style={{background: '#A19B9E', border: '1px solid #707070', borderRadius:'5px', height:'80vh'}}>
-            <div className='container-fluid bg-white p-2 my-3' style={{height: '72vh'}}>
+        <div className='container-fluid my-2' style={{background: '#A19B9E', border: '1px solid #707070', borderRadius:'5px', height:'442px'}}>
+            <div className='container-fluid bg-white p-2 my-4' style={{height: '90%'}}>
                 <div className='row justify-content-center'>
                     <div className='col-4'>
                     <Link to='/policyeditor'><i className="bi bi-arrow-left"></i></Link>
@@ -38,7 +37,7 @@ export default function EditPolicy() {
                                 max='20'
                                 value={duration}
                                 onChange={e => {
-                                setDuration(Number(e.target.value));
+                                    setDuration(Number(e.target.value));
                                 }}
                             />
                             <span> mins</span>
@@ -65,11 +64,10 @@ export default function EditPolicy() {
                         </div>    
                     </div>                  
                     <div className="col-12 justify-centent-center">
-                        <button type="submit" className="btn btn-primary">Update</button>
+                        <button type="update" className="btn btn-primary">Update</button>
                     </div>
                 </form>
             </div>
         </div>
-    </div>
   )
 }

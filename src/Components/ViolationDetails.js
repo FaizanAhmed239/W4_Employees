@@ -82,9 +82,8 @@ export default function ViolationDetails() {
  console.log(ShowViolationData);
 
   return (
-    <div className='p-2' style={{background: '#DCDCDC', borderColor: '#707070',height:'82vh'}}>
-        <div className='container-fluid' style={{background: '#A19B9E', border: '1px solid #707070', borderRadius:'5px', height:'80vh'}}>
-          <div className='container-fluid bg-white p-2 my-3'>
+        <div className='container-fluid my-2' style={{background: '#A19B9E', border: '1px solid #707070', borderRadius:'5px', height:'442px'}}>
+          <div className='container-fluid bg-white p-2 my-4' style={{height: '90%'}}>
             <div className='row'>
                 <div className='col-2'>
                   <Link to='/violations'><i class="bi bi-arrow-left"></i></Link>
@@ -115,44 +114,38 @@ export default function ViolationDetails() {
               </div>
               
             </div>
-            <div className='container-fluid mb-3'>    
-
-              <div className='row m-0 pe-3 py-1 fs-7 align-items-center'>
-                <div className='col-1 text-center'>
-                  Violation Level
-                </div>
-                <div className='col-1 text-center'>
-                  Violation Type  
-                </div>
-                <div className='col-1 text-center'>
-                  Violation Id
-                </div>
-                <div className='col-2 text-center'>
-                  Activity Involved
-                </div>
-                <div className='col-1 text-center'>
-                  Zone
-                </div>
-                <div className='col-3 text-center'>
-                  Date/Time of Violation
-                </div>
-                <div className='col-2 text-center'>
-                  Duration
-                </div>
-                <div className='col-1 text-center'>
-                  Policy Id
-                </div>
+            <div className='row mx-0 p-0 py-1 fs-7 align-items-center'>
+              <div className='col-1 text-center'>
+                Violation Level
               </div>
-              
-              <div className='vioDTable' style={{height: '150px', display: 'block', overflowY: 'scroll'}}>
-                {<ShowViolationData/>}                
+              <div className='col-1 text-center'>
+                Violation Type  
+              </div>
+              <div className='col-1 text-center'>
+                Violation Id
+              </div>
+              <div className='col-2 text-center'>
+                Activity Involved
+              </div>
+              <div className='col-1 text-center'>
+                Zone
+              </div>
+              <div className='col-3 text-center'>
+                Date/Time of Violation
+              </div>
+              <div className='col-2 text-center'>
+                Duration
+              </div>
+              <div className='col-1 text-center'>
+                Policy Id
               </div>
             </div>
-          </div>  
             
+            <div className='vioDTable mx-0 mt-0 p-0' style={{display: 'block', overflowY: 'auto', overflowX: 'hidden', height: '36%'}}>
+              {<ShowViolationData/>}                
+            </div>
+          </div>  
         </div>
-          
-    </div>
   )
 }
 

@@ -23,7 +23,7 @@ import {
 function App() {
   return (
       <Router>
-            <div className="App container-fluid" style={{height: '100%'}}>
+            <div className="App container-fluid">
                   <div className='row'>
                               <Navbar/>
                   </div>
