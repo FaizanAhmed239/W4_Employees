@@ -25,7 +25,7 @@ function App() {
       <Router>
             <div className="App container-fluid">
                   <div className='row'>
-                              <Navbar/>
+                        <Navbar/>
                   </div>
                   <div className='row'>
                         <div className='col-2' >
