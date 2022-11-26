@@ -17,22 +17,22 @@ export default function SideBar() {
                     <Link to="/violations" className='col-12 p-1 sidebarLink'>Violations</Link> 
                 </li>
                 <li className='row'>
-                    <Link to="/role management" className='col-12 p-1 sidebarLink'>Role Management</Link> 
+                    <Link to="/rolemanagement" className='col-12 p-1 sidebarLink'>Role Management</Link> 
                 </li> 
                 <li className='row'>
-                    <Link to="/group Management" className='col-12 p-1 sidebarLink'>Group Management</Link>   
+                    <Link to="/groupmanagement" className='col-12 p-1 sidebarLink'>Group Management</Link>   
                 </li>
                 <li className='row'>
-                    <Link to="/system Control" className='col-12 p-1 sidebarLink'>System Control</Link>   
+                    <Link to="/systemcontrol" className='col-12 p-1 sidebarLink'>System Control</Link>   
                 </li>
                 <li className='row'>
                     <Link to="/policyeditor" className='col-12 p-1 sidebarLink'>Rules & Policy Editor</Link>   
                 </li>
                 <li className='row'>
-                    <Link to="/live Stream" className='col-12 p-1 sidebarLink'>Live Stream</Link>  
+                    <Link to="/livestream" className='col-12 p-1 sidebarLink'>Live Stream</Link>  
                 </li>
                 <li className='row'>
-                    <Link to="/performance Monitoring" className='col-12 p-1 sidebarLink'>Performance Monitoring</Link>   
+                    <Link to="/performancemonitoring" className='col-12 p-1 sidebarLink'>Performance Monitoring</Link>   
                 </li>               
               </ui>          
         </div>
