@@ -25,15 +25,13 @@ function App() {
       <Router>
             <div className="App container-fluid" style={{height: '100%'}}>
                   <div className='row'>
-                        {/* <div className='col-12 p-0'> */}
                               <Navbar/>
-                        {/* </div> */}
                   </div>
-                  <div className='row p-0'>
-                        <div className='col-2 p-0'>
+                  <div className='row'>
+                        <div className='col-2' >
                               <SideBar/>
                         </div>
-                        <div className='col-10 p-0'>
+                        <div className='col-10'>
                               <Routes>
                                     <Route path="/" element={<Home/>} />
                                     <Route path="/home" element={<Home/>} />

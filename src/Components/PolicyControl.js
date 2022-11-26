@@ -26,7 +26,7 @@ export default function PolicyControl() {
             <>       
             {data.map((policy,i)=>{
                 return(
-                    <div key={i} className='row mx-1 p-0 py-1 border' style={{background:'white'}}>
+                    <div key={i} className='row p-0 py-1 border' style={{background:'white'}}>
                         
                         <div className='col-3 text-center'>
                             {policy.activity}
@@ -52,13 +52,9 @@ export default function PolicyControl() {
             )
     }
   return (
-    
-    
-        // <div className='container-fluid pt-4' style={{background: '#A19B9E', height:'75vh'}}>
-            
-            <div className='container-fluid'>    
-                <div className='row my-0 mx-1 p-0 py-1' style={{color: 'white',background:'#707070'}}>
-                    
+                
+            <div className='container-fluid' style={{height:'390px'}}>    
+                <div className='row mx-0 mt-4 p-0 py-1' style={{color: 'white',background:'#707070'}}>                
                     <div className='col-3 text-center'>
                         Activity
                     </div>
@@ -75,11 +71,9 @@ export default function PolicyControl() {
                         Enabled/Disabled
                     </div>
                 </div>
-                <div style={{maxHeight: '330px', display: 'block', overflowY: 'scroll'}}>
+                <div className='row mx-0 mt-0 p-0' style={{display: 'block', overflowY: 'auto', overflowX: 'hidden', height: '80%'}}>
                     {<DisplayPolicy/>}                
                 </div>
             </div>
-
-        //  </div>
   )
 }

@@ -18,6 +18,10 @@ export default function ActivityControl() {
         {'id':123, 'actname':"smoking", 'time': '5min', 'zone':"A", 'IsAllowed':'False', 'enabled': ''},
         {'id':123, 'actname':"smoking", 'time': '5min', 'zone':"A", 'IsAllowed':'False', 'enabled': ""},
         {'id':123, 'actname':"smoking", 'time': '5min', 'zone':"A", 'IsAllowed':'False', 'enabled': ""},
+        {'id':123, 'actname':"smoking", 'time': '5min', 'zone':"A", 'IsAllowed':'False', 'enabled': ""},
+        {'id':123, 'actname':"smoking", 'time': '5min', 'zone':"A", 'IsAllowed':'False', 'enabled': ''},
+        {'id':123, 'actname':"smoking", 'time': '5min', 'zone':"A", 'IsAllowed':'False', 'enabled': ""},
+        {'id':123, 'actname':"smoking", 'time': '5min', 'zone':"A", 'IsAllowed':'False', 'enabled': ""},
         {'id':123, 'actname':"smoking", 'time': '5min', 'zone':"A", 'IsAllowed':'False', 'enabled': ""}
     ]);
 
@@ -26,7 +30,7 @@ export default function ActivityControl() {
             <>       
             {data.map((activity,i)=>{
                 return(
-                    <div key={i} className='row mx-1 p-0 py-1 border' style={{background:'white'}}>
+                    <div key={i} className='row p-0 py-1 border' style={{background:'white'}}>
                         
                         <div className='col-6 text-center'>
                             {activity.actname}
@@ -36,22 +40,16 @@ export default function ActivityControl() {
                                 <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault" style={{margin:'auto'}}/>
                                 <label class="form-check-label" for="flexSwitchCheckDefault"></label>
                             </div>
-                        </div>
-                            
-                        
+                        </div>           
                     </div>            
                   )})}            
             </>
             )
     }
   return (
-    
-    
-        <div className='container-fluid pt-4' style={{background: '#A19B9E', height:'75vh'}}>
             
-            <div className='container-fluid'>    
-                <div className='row my-0 mx-1 p-0 py-1' style={{color: 'white',background:'#707070'}}>
-                    
+            <div className='container-fluid' style={{height:'390px'}}>    
+                <div className='row mx-0 mt-4 p-0 py-1' style={{color: 'white',background:'#707070'}}>                    
                     <div className='col-6 text-center'>
                         Activity
                     </div>
@@ -59,11 +57,9 @@ export default function ActivityControl() {
                         Enabled/Disabled
                     </div>
                 </div>
-                <div style={{maxHeight: '330px', display: 'block', overflowY: 'scroll'}}>
+                <div className='row mx-0 mt-0 p-0' style={{display: 'block', overflowY: 'auto', overflowX: 'hidden', height: '80%'}}>
                     {<DisplayPolicy/>}                
                 </div>
             </div>
-
-         </div>
   )
 }
