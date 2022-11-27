@@ -24,6 +24,7 @@ html,body{
 .sidebarLink:hover{
   background-color: #707070;
   color: white;
+  transform: scale(1.1);
 }
 /* SIDEBAR */
 
@@ -93,7 +94,8 @@ html,body{
 }
 
 .navLink:hover{
-  color: black;
+  color: #FFD700;
+  transition: .1s ease;
 }
 /* NAVBAR */
 
@@ -170,6 +172,7 @@ html,body{
 
 .controlNav2:hover{
   color: white;
+  transform: scale(1.1) translateX(7px);
 }
 
 .controlNav1{
@@ -181,5 +184,6 @@ html,body{
 
 .controlNav1:hover{
   color: white;
+  transform: scale(1.1) translateX(-7px);
 }
 /* SYSTEM CONTROL */

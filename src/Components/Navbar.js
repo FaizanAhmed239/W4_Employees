@@ -2,6 +2,7 @@ import React from 'react'
 import {
   Link,
 } from 'react-router-dom';
+import SideBar from './SideBar';
 
 
 export default function Navbar() {
@@ -13,7 +14,7 @@ export default function Navbar() {
         </div>
         <div className='col-7'>
           <div className='row justify-content-center'>
-            <Link to="/home" className='col-3 navLink p-0'>
+            <Link to="/home" className='col-3 navLink p-0' onClick={SideBar()}>
                 <h6 className='navCenter ps-5'>W4 Employees</h6>
             </Link>
           </div>         
