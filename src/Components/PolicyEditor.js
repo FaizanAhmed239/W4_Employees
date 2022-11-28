@@ -6,17 +6,29 @@ import {
 export default function PolicyEditor() {
 
     const [data, setData] = useState([
-        {'id':123, 'activity':"smoking", 'time': '5min', 'zone':"A", 'IsAllowed':'True', 'enabled': ''},
-        {'id':123, 'activity':"smoking", 'time': '5min', 'zone':"A", 'IsAllowed':'True', 'enabled': ''},
-        {'id':123, 'activity':"smoking", 'time': '5min', 'zone':"A", 'IsAllowed':'True', 'enabled': ""},
-        {'id':123, 'activity':"smoking", 'time': '5min', 'zone':"A", 'IsAllowed':'True', 'enabled': ""},
-        {'id':123, 'activity':"smoking", 'time': '5min', 'zone':"A", 'IsAllowed':'True', 'enabled': ''},
-        {'id':123, 'activity':"smoking", 'time': '5min', 'zone':"A", 'IsAllowed':'False', 'enabled': ""},
-        {'id':123, 'activity':"smoking", 'time': '5min', 'zone':"A", 'IsAllowed':'False', 'enabled': ""},
-        {'id':123, 'activity':"smoking", 'time': '5min', 'zone':"A", 'IsAllowed':'False', 'enabled': ''},
-        {'id':123, 'activity':"smoking", 'time': '5min', 'zone':"A", 'IsAllowed':'False', 'enabled': ""},
-        {'id':123, 'activity':"smoking", 'time': '5min', 'zone':"A", 'IsAllowed':'False', 'enabled': ""},
-        {'id':123, 'activity':"smoking", 'time': '5min', 'zone':"A", 'IsAllowed':'False', 'enabled': ""}
+        {'id':123, 'activity':"smoking", 'type':"LowLevel", 'time': '5min', 'zone':"A", 'IsAllowed':'True', 'enabled': ''},
+        {'id':123, 'activity':"smoking", 'type':"LowLevel", 'time': '5min', 'zone':"A", 'IsAllowed':'True', 'enabled': ''},
+        {'id':123, 'activity':"smoking", 'type':"Critical", 'time': '5min', 'zone':"A", 'IsAllowed':'True', 'enabled': ""},
+        {'id':123, 'activity':"smoking", 'type':"Critical", 'time': '5min', 'zone':"A", 'IsAllowed':'True', 'enabled': ""},
+        {'id':123, 'activity':"smoking", 'type':"Critical", 'time': '5min', 'zone':"A", 'IsAllowed':'True', 'enabled': ''},
+        {'id':123, 'activity':"smoking", 'type':"Critical", 'time': '5min', 'zone':"A", 'IsAllowed':'False', 'enabled': ""},
+        {'id':123, 'activity':"smoking", 'type':"Critical", 'time': '5min', 'zone':"A", 'IsAllowed':'False', 'enabled': ""},
+        {'id':123, 'activity':"smoking", 'type':"LowLevel", 'time': '5min', 'zone':"A", 'IsAllowed':'False', 'enabled': ''},
+        {'id':123, 'activity':"smoking", 'type':"LowLevel", 'time': '5min', 'zone':"A", 'IsAllowed':'False', 'enabled': ""},
+        {'id':123, 'activity':"smoking", 'type':"Critical", 'time': '5min', 'zone':"A", 'IsAllowed':'True', 'enabled': ""},
+        {'id':123, 'activity':"smoking", 'type':"Critical", 'time': '5min', 'zone':"A", 'IsAllowed':'True', 'enabled': ''},
+        {'id':123, 'activity':"smoking", 'type':"Critical", 'time': '5min', 'zone':"A", 'IsAllowed':'False', 'enabled': ""},
+        {'id':123, 'activity':"smoking", 'type':"Critical", 'time': '5min', 'zone':"A", 'IsAllowed':'False', 'enabled': ""},
+        {'id':123, 'activity':"smoking", 'type':"LowLevel", 'time': '5min', 'zone':"A", 'IsAllowed':'False', 'enabled': ''},
+        {'id':123, 'activity':"smoking", 'type':"LowLevel", 'time': '5min', 'zone':"A", 'IsAllowed':'False', 'enabled': ""},
+        {'id':123, 'activity':"smoking", 'type':"Critical", 'time': '5min', 'zone':"A", 'IsAllowed':'True', 'enabled': ""},
+        {'id':123, 'activity':"smoking", 'type':"Critical", 'time': '5min', 'zone':"A", 'IsAllowed':'True', 'enabled': ''},
+        {'id':123, 'activity':"smoking", 'type':"Critical", 'time': '5min', 'zone':"A", 'IsAllowed':'False', 'enabled': ""},
+        {'id':123, 'activity':"smoking", 'type':"Critical", 'time': '5min', 'zone':"A", 'IsAllowed':'False', 'enabled': ""},
+        {'id':123, 'activity':"smoking", 'type':"LowLevel", 'time': '5min', 'zone':"A", 'IsAllowed':'False', 'enabled': ''},
+        {'id':123, 'activity':"smoking", 'type':"LowLevel", 'time': '5min', 'zone':"A", 'IsAllowed':'False', 'enabled': ""},
+        {'id':123, 'activity':"smoking", 'type':"LowLevel", 'time': '5min', 'zone':"A", 'IsAllowed':'False', 'enabled': ""},
+        {'id':123, 'activity':"smoking", 'type':"LowLevel", 'time': '5min', 'zone':"A", 'IsAllowed':'False', 'enabled': ""}
     ]);
 
     const DisplayPolicy=()=>{
@@ -24,21 +36,23 @@ export default function PolicyEditor() {
             <>       
             {data.map((policy,i)=>{
                 return(
-                    <div key={i} className='row my-2 mx-1 p-0 py-1' style={{background:'white', borderRadius: '5px'}}>
-                        
+                    <div key={i} className='row p-0 py-1 border' style={{background:'white'}}>
                         <div className='col-2 text-center'>
                             {policy.activity}
+                        </div>
+                        <div className='col-1'>
+                            {policy.type}
                         </div>
                         <div className='col-2 text-center'>
                             {policy.time}
                         </div>
-                        <div className='col-2 text-center'>
+                        <div className='col-1 text-center'>
                             {policy.zone}
                         </div>
                         <div className='col-2 text-center'>
                             {policy.IsAllowed}
                         </div>
-                        <div className='col-2 ps-4 text-center'>
+                        <div className='col-2 ps3 text-center'>
                             <Link to='/editpolicy'><i class="bi bi-pencil-square"></i></Link>
                             <span> / </span>
                             <i class="bi bi-trash3"></i>
@@ -55,7 +69,7 @@ export default function PolicyEditor() {
             )
     }
   return ( 
-        <div className='container-fluid my-2' style={{background: '#A19B9E', border: '1px solid #707070', borderRadius:'5px', height:'442px'}}>
+        <div className='container-fluid my-2' style={{background: '#A19B9E', border: '1px solid #707070', borderRadius:'5px', height:'80vh'}}>
             <div className="row p-0 m-0 justify-content-between">
                 <h1 className='col-2 topHeading'>
                     Policies
@@ -68,27 +82,30 @@ export default function PolicyEditor() {
                     </Link>
                 </div>
             </div>
-            <div className='row my-0 mx-1 p-0 py-1' style={{color: 'white'}}>
+            <div className='row my-0 mx-1 p-0 py-1' style={{color: 'white',background:'#707070'}}>
                 <div className='col-2 text-center'>
                     Activity
+                </div>
+                <div className='col-1 text-start'>
+                    Level
                 </div>
                 <div className='col-2 text-center'>
                     Time Duration
                 </div>
-                <div className='col-2 text-center'>
+                <div className='col-1 px-0'>
                     Zone
                 </div>
-                <div className='col-2 text-center'>
+                <div className='col-2 px-4'>
                     IsAllowed
                 </div>
-                <div className='col-2 text-center'>
+                <div className='col-1 text-start'>
                     Edit/Delete
                 </div>
-                <div className='col-2 text-center'>
+                <div className='col-3 text-center'>
                     Enabled/Disabled
                 </div>
             </div>
-            <div className='row mx-0 mt-0 p-0' style={{display: 'block', overflowY: 'auto', overflowX: 'hidden', height: '78%'}}>
+            <div className='row mx-1 mt-0 p-0' style={{display: 'block', overflowY: 'auto', overflowX: 'hidden', height: '60vh'}}>
                 {<DisplayPolicy/>}                
             </div>
         </div>
