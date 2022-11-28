@@ -1,4 +1,5 @@
 import './styles.css';
+import React from 'react';
 import Navbar from './Components/Navbar';
 import SideBar from './Components/SideBar';
 import Home from './Components/Home';
@@ -20,46 +21,46 @@ import {
       BrowserRouter as Router,
       Routes,
       Route,
-  } from 'react-router-dom';
+} from 'react-router-dom';
 
 function App() {
-  return (
-      <Router>
-            <div className="App container-fluid">
-                  <div className='row'>
-                        <Navbar/>
-                  </div>
-                  <div className='row'>
-                        <div className='col-2' >
-                              <SideBar/>
+      return (
+            <Router>
+                  <div className="App container-fluid">
+                        <div className='row'>
+                              <Navbar />
                         </div>
-                        <div className='col-10'>
-                              <Routes>
-                                    <Route path="/" element={<Home/>} />
-                                    <Route path="/home" element={<Home/>} />
-                                    <Route path="/registration" element={<Registration/>} />
-                                    <Route path="/attendance" element={<Attendance/>} />
-                                    <Route path="/violations" element={<Violations/>} />
-                                    <Route path="/rolemanagement" element={<RoleManagement/>}/>
-                                    <Route path="/groupmanagement" element={<GroupManagement/>}/>
-                                    <Route path="/violationdetails" element={<ViolationDetails/>}/>
-                                    <Route path="/addpolicy" element={<AddPolicy/>}/>
-                                    <Route path="/editpolicy" element={<EditPolicy/>}/>
-                                    <Route path="/policyeditor" element={<PolicyEditor/>}/>
-                                    <Route path="/systemcontrol" element={<SystemControl/>}>
-                                          <Route index element={<ActivityControl/>}/>
-                                          <Route path="activitycontrol" element={<ActivityControl/>} />
-                                          <Route path="policycontrol" element={<PolicyControl/>}/>   
-                                    </Route>
-                                    <Route path="/livestream" element={<LiveStream/>}/>
-                                    <Route path="/performancemonitoring" element={<PerformanceMonitoring/>}/>
-                              </Routes>
+                        <div className='row'>
+                              <div className='col-2' >
+                                    <SideBar />
+                              </div>
+                              <div className='col-10'>
+                                    <Routes>
+                                          <Route path="/" element={<Home />} />
+                                          <Route path="/home" element={<Home />} />
+                                          <Route path="/registration" element={<Registration />} />
+                                          <Route path="/attendance" element={<Attendance />} />
+                                          <Route path="/violations" element={<Violations />} />
+                                          <Route path="/rolemanagement" element={<RoleManagement />} />
+                                          <Route path="/groupmanagement" element={<GroupManagement />} />
+                                          <Route path="/violationdetails" element={<ViolationDetails />} />
+                                          <Route path="/addpolicy" element={<AddPolicy />} />
+                                          <Route path="/editpolicy" element={<EditPolicy />} />
+                                          <Route path="/policyeditor" element={<PolicyEditor />} />
+                                          <Route path="/systemcontrol" element={<SystemControl />}>
+                                                <Route index element={<ActivityControl />} />
+                                                <Route path="activitycontrol" element={<ActivityControl />} />
+                                                <Route path="policycontrol" element={<PolicyControl />} />
+                                          </Route>
+                                          <Route path="/livestream" element={<LiveStream />} />
+                                          <Route path="/performancemonitoring" element={<PerformanceMonitoring />} />
+                                    </Routes>
+                              </div>
                         </div>
                   </div>
-            </div>
-      </Router>
-    
-  );
+            </Router>
+
+      );
 }
 
 export default App;
