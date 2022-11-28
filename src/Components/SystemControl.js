@@ -26,7 +26,7 @@ export default function SystemControl() {
     setStyles(style)
   } 
   return (
-        <div className='container-fluid mt-2' style={{background: '#A19B9E', border: '1px solid #707070', borderRadius:'5px', height:'96%'}}>
+        <div className='container-fluid mt-2' style={{background: '#A19B9E', border: '1px solid #707070', borderRadius:'5px', height:'80vh'}}>
           <div className="row justify-content-center p-0 mx-0 mt-2">
             <Link to="activitycontrol" className='controlNav1 border border-dark text-center col-2' style={styles[0]} onClick={()=>handleHover(0)}>
               <div >

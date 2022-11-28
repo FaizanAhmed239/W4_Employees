@@ -141,7 +141,7 @@ export default function ViolationDetails() {
               </div>
             </div>
             
-            <div className='vioDTable mx-0 mt-0 p-0' style={{display: 'block', overflowY: 'auto', overflowX: 'hidden', height: '35vh'}}>
+            <div className='vioDTable mx-0 mt-0 p-0' style={{display: 'block', overflowY: 'auto', overflowX: 'hidden', height: '25vh'}}>
               {<ShowViolationData/>}                
             </div>
           </div>  
