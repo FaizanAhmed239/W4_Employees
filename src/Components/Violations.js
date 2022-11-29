@@ -51,7 +51,7 @@ export default function Violations() {
   } 
  console.log(ShowViolationData);
   return (
-        <div className='container-fluid my-2' style={{background: '#A19B9E', border: '1px solid #707070', borderRadius:'5px', height:'96%'}}>
+        <div className='container-fluid' style={{background: '#A19B9E', border: '1px solid #707070', borderRadius:'5px', height:'100%'}}>
             <div className="row p-0 m-0">
               <h1 className='col-2 topHeading'>
                 Violations
@@ -65,7 +65,7 @@ export default function Violations() {
                   <p>Search Users by Employee ID, CNIC, or Mobile Number</p>
               </div>
             </div>
-            <table className='violationTable my-0 mx-1 p-0'>
+            <table className='violationTable my-0 mx-1 p-0' style={{display: 'block', overflowY: 'auto', overflowX: 'hidden', height: '50%'}}>
               <tr>
                 <th>Employee Id</th>
                 <th>Employee Name</th>

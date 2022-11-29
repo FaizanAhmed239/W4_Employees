@@ -82,7 +82,7 @@ export default function ViolationDetails() {
  console.log(ShowViolationData);
 
   return (
-        <div className='container-fluid bg-white my-2' style={{background: '#A19B9E', border: '1px solid #707070', borderRadius:'5px', height:'96%'}}>
+        <div className='container-fluid bg-white' style={{background: '#A19B9E', border: '1px solid #707070', borderRadius:'5px', height:'100%'}}>
           {/* <div className='container-fluid bg-white p-2 mt-2 mb-5' style={{height: '96%'}}> */}
             <div className='row'>
                 <div className='col-2'>
@@ -141,7 +141,7 @@ export default function ViolationDetails() {
               </div>
             </div>
             
-            <div className='vioDTable mx-0 mt-0 mb-3 p-0' style={{display: 'block', overflowY: 'auto', overflowX: 'hidden', height: '35vh'}}>
+            <div className='vioDTable mx-0 mt-0 mb-3 p-0' style={{display: 'block', overflowY: 'auto', overflowX: 'hidden', height: '50%'}}>
               {<ShowViolationData/>}                
             </div>
           {/* </div>   */}

@@ -70,7 +70,7 @@ export default function PolicyEditor() {
         )
     }
     return (
-        <div className='container-fluid my-2' style={{ background: '#A19B9E', border: '1px solid #707070', borderRadius: '5px', height: '80vh' }}>
+        <div className='container-fluid' style={{ background: '#A19B9E', border: '1px solid #707070', borderRadius: '5px', height: '100%' }}>
             <div className="row p-0 m-0 justify-content-between">
                 <h1 className='col-2 topHeading'>
                     Policies
@@ -106,7 +106,7 @@ export default function PolicyEditor() {
                     Enabled/Disabled
                 </div>
             </div>
-            <div className='row mx-1 mt-0 p-0' style={{ display: 'block', overflowY: 'auto', overflowX: 'hidden', height: '60vh' }}>
+            <div className='row mx-1 mt-0 p-0' style={{ display: 'block', overflowY: 'auto', overflowX: 'hidden', height: '50%'}}>
                 {<DisplayPolicy />}
             </div>
         </div>

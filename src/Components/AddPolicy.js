@@ -9,8 +9,8 @@ import {
 export default function AddPolicy() {
     const [duration, setDuration] = useState(0);
   return (
-        <div className='container-fluid my-2' style={{background: '#A19B9E', border: '1px solid #707070', borderRadius:'5px', height:'80vh'}}>
-            <div className='container-fluid bg-white p-2 my-4' style={{height: '72vh'}}>
+        <div className='container-fluid' style={{background: '#A19B9E', border: '1px solid #707070', borderRadius:'5px', height:'100%'}}>
+            <div className='container-fluid bg-white p-2 my-4' style={{height: '100vh'}}>
                 <div className='row justify-content-center'>
                     <div className='col-4'>
                     <Link to='/policyeditor'><i className="bi bi-arrow-left"></i></Link>

@@ -9,26 +9,28 @@ import {
 export default function AddPolicy() {
     const [duration, setDuration] = useState(0);
   return (
-        <div className='container-fluid my-2' style={{background: '#A19B9E', border: '1px solid #707070', borderRadius:'5px', height:'80vh'}}>
-            <div className='container-fluid bg-white p-2 my-4' style={{height: '72vh'}}>
+        <div className='container-fluid' style={{background: '#A19B9E', border: '1px solid #707070', borderRadius:'5px', height:'100vh'}}>
+            <div className='container-fluid bg-white p-2 mt-2 mb-2' style={{height: '100%'}}>
                 <div className='row justify-content-center'>
                     <div className='col-4'>
-                    <Link to='/policyeditor'><i className="bi bi-arrow-left"></i></Link>
+                        <Link to='/policyeditor'><i className="bi bi-arrow-left"></i></Link>
                     </div>
                     <h1 className='col-8 fs-3 pt-1 text-dark'>Edit Policy</h1>
                 </div>
-                <form className="row g-3">
-                   
-                    <div className="col-4">
-                        <label for="inputState" className="form-label">Activity:</label>
-                        <select id="inputState" className="form-select">
-                        <option selected>Choose...</option>
-                        <option>Talking On Phone</option>
-                        <option>Holding Gun/Shooting </option>
-                        </select>
+                <form className='' style={{height: '50%'}}>
+                    <div className='row'>
+                        <div className="col-4">
+                            <label for="inputState" className="form-label">Activity:</label>
+                            <select id="inputState" className="form-select">
+                            <option selected>Choose...</option>
+                            <option>Talking On Phone</option>
+                            <option>Holding Gun/Shooting </option>
+                            </select>
+                        </div>
+                        <div className='col-8'></div>
                     </div>
-                    <div className='col-8'></div>
-                    <div className='row g-3'>
+                    
+                    <div className='row mt-2'>
                         <div className='col-5 mt-0'>
                             <label for="inputTime" className="form-label">Time Duration (0 - 20):</label>
                             <input className='inpTime'
@@ -61,11 +63,11 @@ export default function AddPolicy() {
                             <label class="form-check-label" for="exampleRadios1">
                                 No
                             </label>
-                        </div>    
+                        </div>   
                     </div>                  
-                    <div className="col-12 justify-centent-center">
+                    <div className="form-row mt-3 justify-centent-center">
                         <button type="update" className="btn btn-primary">Update</button>
-                    </div>
+                    </div> 
                 </form>
             </div>
         </div>

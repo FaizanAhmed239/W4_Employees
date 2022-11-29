@@ -37,7 +37,7 @@ export default function SideBar() {
         setStyles(color)
     }
     return (
-        <div className='container-fluid my-2' style={{ width: '100%', background: '#A19B9E', border: '1px solid #707070', borderRadius: '5px', height: '96%' }}>
+        <div className='container-fluid' style={{width: '100%', background: '#A19B9E', border: '1px solid #707070', borderRadius: '5px', height: '100%' }}>
             <ui style={{ listStyleType: 'none' }}>
                 <li className='row' style={styles[0]} onClick={() => handleHover(0)}>
                     <Link to="/registration" className='col-12 p-1 sidebarLink'>Registration</Link>

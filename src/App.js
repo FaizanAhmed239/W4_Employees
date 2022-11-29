@@ -26,15 +26,15 @@ import {
 function App() {
       return (
             <Router>
-                  <div className="App container-fluid">
-                        <div className='row'>
+                  <div className="App container-fluid-lg">
+                        <div className='row m-0'>
                               <Navbar />
                         </div>
-                        <div className='row'>
-                              <div className='col-2' >
+                        <div className='row m-0'>
+                              <div className='col-2 p-2' >
                                     <SideBar />
                               </div>
-                              <div className='col-10'>
+                              <div className='col-10 p-2'>
                                     <Routes>
                                           <Route path="/" element={<Home />} />
                                           <Route path="/home" element={<Home />} />
