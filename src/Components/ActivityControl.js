@@ -8,21 +8,37 @@ import {
 export default function ActivityControl() {
 
     const [data, setData] = useState([
-        { 'id': 123, 'actname': "smoking", 'time': '5min', 'zone': "A", 'IsAllowed': 'True', 'enabled': '' },
-        { 'id': 123, 'actname': "smoking", 'time': '5min', 'zone': "A", 'IsAllowed': 'True', 'enabled': '' },
-        { 'id': 123, 'actname': "smoking", 'time': '5min', 'zone': "A", 'IsAllowed': 'True', 'enabled': "" },
-        { 'id': 123, 'actname': "smoking", 'time': '5min', 'zone': "A", 'IsAllowed': 'True', 'enabled': "" },
-        { 'id': 123, 'actname': "smoking", 'time': '5min', 'zone': "A", 'IsAllowed': 'True', 'enabled': '' },
-        { 'id': 123, 'actname': "smoking", 'time': '5min', 'zone': "A", 'IsAllowed': 'False', 'enabled': "" },
-        { 'id': 123, 'actname': "smoking", 'time': '5min', 'zone': "A", 'IsAllowed': 'False', 'enabled': "" },
-        { 'id': 123, 'actname': "smoking", 'time': '5min', 'zone': "A", 'IsAllowed': 'False', 'enabled': '' },
-        { 'id': 123, 'actname': "smoking", 'time': '5min', 'zone': "A", 'IsAllowed': 'False', 'enabled': "" },
-        { 'id': 123, 'actname': "smoking", 'time': '5min', 'zone': "A", 'IsAllowed': 'False', 'enabled': "" },
-        { 'id': 123, 'actname': "smoking", 'time': '5min', 'zone': "A", 'IsAllowed': 'False', 'enabled': "" },
-        { 'id': 123, 'actname': "smoking", 'time': '5min', 'zone': "A", 'IsAllowed': 'False', 'enabled': '' },
-        { 'id': 123, 'actname': "smoking", 'time': '5min', 'zone': "A", 'IsAllowed': 'False', 'enabled': "" },
-        { 'id': 123, 'actname': "smoking", 'time': '5min', 'zone': "A", 'IsAllowed': 'False', 'enabled': "" },
-        { 'id': 123, 'actname': "smoking", 'time': '5min', 'zone': "A", 'IsAllowed': 'False', 'enabled': "" }
+        {'actname': "smoking", 'enabled': '' },
+        {'actname': "smoking", 'enabled': '' },
+        {'actname': "smoking", 'enabled': "" },
+        {'actname': "smoking", 'enabled': "" },
+        {'actname': "smoking", 'enabled': '' },
+        {'actname': "smoking", 'enabled': "" },
+        {'actname': "smoking", 'enabled': "" },
+        {'actname': "smoking", 'enabled': '' },
+        {'actname': "smoking", 'enabled': "" },
+        {'actname': "smoking", 'enabled': '' },
+        {'actname': "smoking", 'enabled': "" },
+        {'actname': "smoking", 'enabled': "" },
+        {'actname': "smoking", 'enabled': '' },
+        {'actname': "smoking", 'enabled': "" },
+        {'actname': "smoking", 'enabled': "" },
+        {'actname': "smoking", 'enabled': '' },
+        {'actname': "smoking", 'enabled': "" },
+        {'actname': "smoking", 'enabled': '' },
+        {'actname': "smoking", 'enabled': "" },
+        {'actname': "smoking", 'enabled': "" },
+        {'actname': "smoking", 'enabled': '' },
+        {'actname': "smoking", 'enabled': "" },
+        {'actname': "smoking", 'enabled': "" },
+        {'actname': "smoking", 'enabled': '' },
+        {'actname': "smoking", 'enabled': "" },
+        {'actname': "smoking", 'enabled': "" },
+        {'actname': "smoking", 'enabled': "" },
+        {'actname': "smoking", 'enabled': '' },
+        {'actname': "smoking", 'enabled': "" },
+        {'actname': "smoking", 'enabled': "" },
+        {'actname': "smoking", 'enabled': "" }
     ]);
 
     const DisplayPolicy = () => {
@@ -36,7 +52,7 @@ export default function ActivityControl() {
                                 {activity.actname}
                             </div>
                             <div className='col-6' >
-                                <div class="form-check form-switch" style={{ display: 'flex' }}>
+                                <div class="form-check form-switch" style={{display: 'flex' }}>
                                     <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault" style={{ margin: 'auto' }} />
                                     <label class="form-check-label" for="flexSwitchCheckDefault"></label>
                                 </div>
@@ -48,17 +64,16 @@ export default function ActivityControl() {
         )
     }
     return (
-
-        <div className='container-fluid' style={{ height: '100%' }}>
-            <div className='row mx-0 mt-4 p-0 py-1' style={{ color: 'white', background: '#707070' }}>
-                <div className='col-6 text-center'>
+        <div className='container-fluid' style={{ height: '100%'}}>
+            <div className='row mx-0 me-2 mt-4 p-0 py-1' style={{ color: 'white', background: '#707070' }}>
+                <div className='col-6 pe-4 text-center'>
                     Activity
                 </div>
                 <div className='col-6 text-center'>
                     Enabled/Disabled
                 </div>
             </div>
-            <div className='row mx-0 mt-0 p-0' style={{ display: 'block', overflowY: 'auto', overflowX: 'hidden', height: '50%' }}>
+            <div className='row mx-0 mt-0 p-0' style={{ display: 'block', overflowY: 'auto', overflowX: 'hidden', height: '50%'}}>
                 {<DisplayPolicy />}
             </div>
         </div>

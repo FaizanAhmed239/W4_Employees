@@ -38,7 +38,7 @@ export default function SystemControl() {
                   Policy Control
               </div>
             </Link>
-            <div className='' style={{height: '100vh'}}>
+            <div  className='row mx-1 mt-0 p-0' style={{display: 'block', overflowY: 'auto', overflowX: 'hidden', height: '100%'}}>
               <Outlet/>
             </div>          
           </div>          

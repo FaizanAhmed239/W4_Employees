@@ -13,8 +13,8 @@ export default function Navbar() {
           <h6 className='navCenter'>Welcome: <span className='navSpan'>Junaid Atif</span></h6>
         </div>
         <div className='col-7'>
-          <div className='row justify-content-center'>
-            <Link to="/home" className='col-3 navLink p-0' onClick={SideBar()}>
+          <div className='row ps-5 justify-content-center'>
+            <Link to="/home" className='col-12 navLink ps-5' onClick={SideBar()}>
                 <h6 className='navCenter ps-5'>W4 Employees</h6>
             </Link>
           </div>         

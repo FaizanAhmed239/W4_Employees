@@ -43,15 +43,10 @@ html {
 }
 
 .violationTable {
-  /* height: 50%; */
-  /* width: 100; */
   text-align: center;
   border-collapse: separate;
   background-color: #F7F7F7;
-  /* display:block; */
-  /* overflow-y: scroll; */
-  /* white-space: nowrap; */
-  /* font-size: 13px; */
+  
 }
 
 .search {
